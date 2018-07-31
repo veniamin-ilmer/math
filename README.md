@@ -37,3 +37,12 @@ This trigonmic identity diagram can be extended infinitely in all directions (si
 The tile can be rewritten to use just Sine and Cosine:
 
 ![Simplified Trigonometric Tile](trigonometric-tiling-simple.png)
+
+The exponent of each point can be converted from cartesian coordinates by the following:
+
+For any point:
+    cos<sup>c</sup>θ + sin<sup>s</sup>θ
+
+    c = (y + x) / 2
+
+    s = (x + y) / 2
