@@ -22,7 +22,7 @@ Please read
 
 as **cos θ * sin θ**.
 
-Example of identities from the tiling:
+## Example of identities from tiling
 
 ### sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1
 ### 1 + tan<sup>2</sup>θ = sec<sup>2</sup>θ
