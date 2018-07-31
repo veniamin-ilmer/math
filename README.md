@@ -20,7 +20,7 @@ In all of the tiled triangles below, the top left point squared plus top right p
 
 ![Trigonometric Tile](trigonometric-tiling.png)
 
-Please read
+Please read the multiline
 
 ![cossin](cossin.png)
 
@@ -44,7 +44,7 @@ The tile can be rewritten to use just Sine and Cosine:
 
 The exponent of each point can be converted from cartesian coordinates for any point:
 
-**cos<sup>c</sup>θ + sin<sup>s</sup>θ**
+**cos<sup>c</sup>θ * sin<sup>s</sup>θ**
 
     c = (y + x) / 2
 
