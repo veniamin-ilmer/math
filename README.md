@@ -12,7 +12,7 @@ For all triangles used in the tiling on this page:
 
 ### a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
 
-## Tile
+## Trigonometric Tile
 
 ![Trigonometric Tile](trigonometric-tiling.png)
 
@@ -31,3 +31,9 @@ as **cos θ * sin θ**.
 ### cos<sup>2</sup>θ sin<sup>2</sup>θ + sin<sup>4</sup>θ = sin<sup>2</sup>θ
 
 This trigonmic identity diagram can be extended infinitely in all directions (sin, cos, tan, csc, sec, cot).
+
+## Simplified Trigonometric Tile
+
+The tile can be rewritten to use just Sine and Cosine:
+
+![Simplified Trigonometric Tile](trigonometric-tile-simple.png)
