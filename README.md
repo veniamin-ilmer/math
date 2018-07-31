@@ -44,4 +44,6 @@ The exponent of each point can be converted from cartesian coordinates for any p
 
     c = (y + x) / 2
 
-    s = (x + y) / 2
+    s = (y - x) / 2
+
+## Hyperbolic Tile
