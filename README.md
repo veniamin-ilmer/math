@@ -17,7 +17,9 @@ For all triangles used in the tiling on this page:
 ![Trigonometric Tile](trigonometric-tiling.png)
 
 Please read
+
 ![cossin](cossin.png)
+
 as **cos θ * sin θ**.
 
 Example of identities from the tiling:
