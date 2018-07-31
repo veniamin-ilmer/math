@@ -20,3 +20,6 @@ Example of identities from the tiling:
 
 ### sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1
 ### 1 + tan<sup>2</sup>θ = sec<sup>2</sup>θ
+### cot<sup>2</sup>θ + 1 = csc<sup>2</sup>θ
+### csc<sup>2</sup>θ + sec<sup>2</sup>θ = csc<sup>2</sup>θ sec<sup>2</sup>θ
+### cos<sup>2</sup>θ sin<sup>2</sup>θ + sin<sup>4</sup>θ = sin<sup>2</sup>θ
