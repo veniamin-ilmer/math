@@ -61,3 +61,7 @@ Hence, the tiling can also be doing for hyberbolic functions too.
 ## Hyperbolic Tile
 
 ![Hyperbolic Tile](hyperbolic-tiling.png)
+
+## Acknowledgements
+
+I got the idea to build this tiling after watching the video [Super Hexagon](https://www.youtube.com/watch?v=T7D1W1oD8wo)
