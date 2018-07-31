@@ -14,3 +14,9 @@ For all triangles used in the tiling on this page:
 
 ## Tile
 
+![Trigonometric Tile](trigonometric-tiling.png)
+
+Example of identities from the tiling:
+
+### sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1
+### 1 + tan<sup>2</sup>θ = sec<sup>2</sup>θ
