@@ -36,4 +36,4 @@ This trigonmic identity diagram can be extended infinitely in all directions (si
 
 The tile can be rewritten to use just Sine and Cosine:
 
-![Simplified Trigonometric Tile](trigonometric-tile-simple.png)
+![Simplified Trigonometric Tile](trigonometric-tiling-simple.png)
