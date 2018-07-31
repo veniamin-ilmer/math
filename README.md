@@ -16,6 +16,8 @@ For all triangles used in the tiling on this page:
 
 ![Trigonometric Tile](trigonometric-tiling.png)
 
+Please read ![cossin](cossin.png) as **cos θ * sin θ**.
+
 Example of identities from the tiling:
 
 ### sin<sup>2</sup>θ + cos<sup>2</sup>θ = 1
@@ -23,3 +25,6 @@ Example of identities from the tiling:
 ### cot<sup>2</sup>θ + 1 = csc<sup>2</sup>θ
 ### csc<sup>2</sup>θ + sec<sup>2</sup>θ = csc<sup>2</sup>θ sec<sup>2</sup>θ
 ### cos<sup>2</sup>θ sin<sup>2</sup>θ + sin<sup>4</sup>θ = sin<sup>2</sup>θ
+### etc..
+
+This trigonmic identity diagram can be extended infinitely in all directions (sin, cos, tan, csc, sec, cot).
