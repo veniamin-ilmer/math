@@ -59,3 +59,5 @@ f(x)<sup>2</sup> + g(x)<sup>2</sup> = 1
 Hence, the tiling can also be doing for hyberbolic functions too.
 
 ## Hyperbolic Tile
+
+![Hyperbolic Tile](hyperbolic-tiling.png)
