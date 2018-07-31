@@ -46,4 +46,16 @@ The exponent of each point can be converted from cartesian coordinates for any p
 
     s = (y - x) / 2
 
+## Proof
+
+The pattern we see in the tiling:
+
+(f(x)<sup>a + 1</sup> * g(x)<sup>b</sup>)<sup>2</sup> + (f(x)<sup>a</sup> * g(x)<sup>b + 1</sup>)<sup>2</sup> = (f(x)<sup>a</sup> * f(x)<sup>b</sup>)<sup>2</sup>
+
+is only true if the following is valid:
+
+f(x)<sup>2</sup> + g(x)<sup>2</sup> = 1
+
+Hence, the tiling can also be doing for hyberbolic functions too.
+
 ## Hyperbolic Tile
