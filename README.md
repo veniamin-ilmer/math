@@ -46,9 +46,9 @@ The exponent of each point can be converted from cartesian coordinates for any p
 
 **cos<sup>c</sup>θ * sin<sup>s</sup>θ**
 
-    c = (y + x) / 2
+    c = (y - x) / 2
 
-    s = (y - x) / 2
+    s = (y + x) / 2
 
 ## Proof
 
