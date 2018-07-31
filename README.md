@@ -12,6 +12,10 @@ For all triangles used in the tiling on this page:
 
 ### a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
 
+Please note, the points have nothing to do with the triangle. The triangles just provide a neat way of showing all the points.
+
+In all of the tiled triangles below, the top left point squared plus top right point squared equal the bottom point squared.
+
 ## Trigonometric Tile
 
 ![Trigonometric Tile](trigonometric-tiling.png)
@@ -64,4 +68,6 @@ Hence, the tiling can also be doing for hyberbolic functions too.
 
 ## Acknowledgements
 
-I got the idea to build this tiling after watching the video [Super Hexagon](https://www.youtube.com/watch?v=T7D1W1oD8wo)
+I got the idea to build this tiling after watching the video [Super Hexagon](https://www.youtube.com/watch?v=T7D1W1oD8wo).
+
+I don't know who the original author of the "Super Hexagon" is, but it looks like it's used in some schools as a learning tool to help students with trigonometry.
