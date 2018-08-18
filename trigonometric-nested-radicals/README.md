@@ -65,3 +65,5 @@ If there is a zero in the middle, it's plus or minus.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
 | 8 | 6 | 4 | 2 | 0 | 2 | 4 | 6 | 8 |
+
+### Step 2
