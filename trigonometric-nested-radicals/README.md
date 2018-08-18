@@ -47,3 +47,11 @@ Using cos(pi / 8) as an example:
 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
 --- | --- | --- | --- | --- | --- | --- | --- | ---
 
+On the next row, start with the last number, (in this case 8), and keep subtracting 2.
+
+If you get a negative number, take the absolute value:
+
+0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
+--- | --- | --- | --- | --- | --- | --- | --- | ---
+8 | 6 | 4 | 2 | 0 | 2 | 4 | 6 | 8
+
