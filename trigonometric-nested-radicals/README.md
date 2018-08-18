@@ -52,7 +52,16 @@ On the next row, start with the last number, (in this case 8), and keep subtract
 
 If you get a negative number, take the absolute value:
 
-0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
---- | --- | --- | --- | --- | --- | --- | --- | ---
-8 | 6 | 4 | 2 | 0 | 2 | 4 | 6 | 8
+|  |  |  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| 8 | 6 | 4 | 2 | 0 | 2 | 4 | 6 | 8 |
 
+Now split this table in half. The left side is positive. The right side is positive.
+
+If there is a zero in the middle, it's plus or minus.
+
+| + | + | + | + | ± | - | - | - | - |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| 8 | 6 | 4 | 2 | 0 | 2 | 4 | 6 | 8 |
