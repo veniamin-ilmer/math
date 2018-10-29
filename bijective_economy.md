@@ -85,37 +85,8 @@ Bijective 3 | 4.5 | 8.2 | ... | ... | ...
 
 As you can see, Bijective 2 has a better radix economy than Bijective 3, so implementing this in digital electronics will be easier using the existing base 2 system.
 
-## Technical Challenges
+## Digit Storage Challenge
 
-### Zero
-Although we have eliminated zeros, computers would still need to represent that number somehow.
-
-I'd recommend 0 to be treated as a special number.
-
-Let zero equal to the maximum number available for the current register.
-
-So for example, if storing an unsigned integer in a 4 bit register, here is how the number would be translated:
-
-Electrical Up / Down Bits | Bijective 2 | Decimal Translation
----: | ---: | ---:
-D,D,D,D | 1 | 1
-D,D,D,U | 2 | 2
-D,D,U,D | 21 | 3
-D,D,U,U | 22 | 4
-D,U,D,D | 211 | 5
-D,U,D,U | 212 | 6
-D,U,U,D | 221 | 7
-D,U,U,U | 222 | 8
-U,D,D,D | 2111 | 9
-U,D,D,U | 2112 | 10
-U,D,U,D | 2121 | 11
-U,D,U,U | 2122 | 12
-U,U,D,D | 2211 | 13
-U,U,D,U | 2212 | 14
-U,U,U,D | 2221 | 15
-U,U,U,U | 2222 | 0
-
-### Digit Storage
 Although it feel like we just magically got an extra set of information using bijective base 2, there is one crutial piece of information that requires extra memory: The number's digit size.
 
 Let me explain:
@@ -127,3 +98,36 @@ How does it normally get stored?
 Well, it would be stored as 00000001.
 
 In our bijective number system, 0 does not normally exist. We only have 1 and 2. Adding in a zero for space padding will add in an extra digit variety, which will increase our matrix economy, which we are trying to avoid!
+
+I have a solution to this problem, but in order to show it, I'm going to need to show how computers currently represent data.
+
+I'll present this from the perspective of x86 computers, since these are most popular, but you can assume this is applicable/relatable to most CPU variants.
+
+Integers can be represented in four different ways (unsigned):
+
+* AL - 8 bit register, containing numbers 0 to 255.
+* AX - 16 bit register, containing numbers 0 to 65,535.
+* EAX - 32 bit register, containing numbers 0 to 4,294,967,295.
+* RAX - 64 bit register, containing numbers 0 to 18,446,744,073,709,551,615.
+
+When saving information to the memory, the programmer has to know in advance, how big the number will be.
+
+For example, if they know the number will be really small, like the number 3 or 10, then they can choose to store it in an 8 bit register.
+
+If they know that the number will be really large, they can store it in a 64 bit register.
+
+There are a set of mathematical operators for each number type.
+
+So in computer opcodes,
+
+    ADD AL, BL
+    ADD AX, BX
+    ADD EAX, EBX
+    ADD RAX, RBX
+
+Each of these are considered different commands, that use alternative math logic gates, even though they are all performing the same mathematical operation.
+
+Essentially, there is a consequence: More varing types of integer types (8 bit, 16 bit, etc), cause an increase of code memory requirements. This drives up the radix economy.
+
+Additionally, since we are restricted to having the digit size as 8 bits, for example, instead of 6 or 7, that drives up the radix economy too.
+
