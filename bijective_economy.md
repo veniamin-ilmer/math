@@ -62,7 +62,7 @@ For bijective binary, there are also only two varieties of digits used: 1 and 2.
 
 If we count up the number of digits used from the table above, and multiply it by the variety of digits, then divide it by the count of numbers we can calculate the average radix economy.
 
-Average Radix Economy = Sum of Count of Digits / Count of Numbers * Variety of Digits
+    Average Radix Economy = Sum of Count of Digits / Count of Numbers * Variety of Digits
 
 For ordinary binary, the radix economy = 54 / 16 * 2 = 6.75
 
@@ -85,7 +85,7 @@ Bijective 3 | 4.5 | 8.2 | ... | ... | ...
 
 As you can see, Bijective 2 has a better radix economy than Bijective 3, so implementing this in digital electronics will be easier using the existing base 2 system.
 
-## Digit Storage Challenge
+## Electronic Storage Challenge
 
 ### Background
 
@@ -135,14 +135,12 @@ Additionally, since we are restricted to having the digit size as 8 bits, for ex
 
 In order to calculate the new radix economy, we have to take into account the storage of all the extra zeros.
 
-### Digital Ordinary Binary Radix Economy
-Let us assume that in most cases, a programmer will able to predict the number size, and always choose the most efficient number type.
+### Electronic Ordinary Binary Radix Economy
+For simplicity, let's assume we are only working with a byte.
 
-In this case, the first 256 numbers will require 8 bits of data, then up to 64 K will require 16 bits of data, etc.
+In this case, all first 256 numbers will require 8 bits of data:
 
-This means, when calculating the radix economy, we will need to understand the digits in this format:
-
-Decimal | Digital Binary
+Decimal | Electronic Binary
 ---: | ---:
 0 | 00000000
 1 | 00000001
@@ -154,10 +152,31 @@ Decimal | Digital Binary
 253 | 11111101
 254 | 11111110
 255 | 11111111
-256 | 0000000100000000
-257 | 0000000100000001
-258 | 0000000100000010
-259 | 0000000100000011
-260 | 0000000100000100
-... | ...
+
+From here we can calculate, the sum of the number of binary digits from 0 to 255 = 256 * 8 = 2,048.
+
+Using the radix economy formula:
+
+    Average Radix Economy = Sum of Count of Digits / Count of Numbers * Variety of Digits
+
+So the actual digital radix economy comes out to:
+
+    2,048 * 2 / 256
+    =
+    16
+
+Compare this to the radix economy of pure binary numbers from 1 to 256:
+
+    14
+
+In addition to the extra data memory required that is just wasted on zeros, a bit more code memory will be needed for storing the operation types (8 bit, 16 bit, etc).
+
+### Electronic Bijective Binary Radix Economy
+Since zeros are not permitted in a bijective binary system, we don't have the option to pad numbers with zeros to set the number size.
+
+One option is to expand the 8 bit, 16 bit, 32 bit opcodes to also allow for 1 bit, 2 bit, 3 bit, 4 bit, etc commands, but that would require a lot of extra code memory for each sets of commands.
+
+Another option is to remove the concept of adding 8 bit, 16 bit, etc numbers, and instead have just one set of math commands that handles variable numbers.
+
+Variable integer sizes remove the programmer/compiler's responsibility to predict what the number size will be, and potentially make the memory use much more efficient.
 
