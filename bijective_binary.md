@@ -19,5 +19,25 @@ As a result, people brought up ideas of building Ternary based digital logic gat
 However, recently I came up with an alternative representation of numbers, that provides a significantly better radix economy than base 3, and doesn't require as much effort to convert.
 
 ### Bijective Binary
-[Bijective Numeration](https://en.wikipedia.org/wiki/Bijective_numeration) is an alternative representation of numbers, that begins with the number 1 rather than 0.
+[Bijective Numeration](https://en.wikipedia.org/wiki/Bijective_numeration) is an alternative representation of numbers, that does not use the number 0 as a digit, and jumps directly to 1.
 
+I'll provide an example with base 2:
+
+Decimal | Ordinary Base 2 | Bijective Base 2
+--- | --- | ---
+1 | 1 | 1
+2 | 10 | 2
+3 | 11 | 11
+4 | 100 | 12
+5 | 101 | 21
+6 | 110 | 22
+7 | 111 | 111
+8 | 1000 | 112
+9 | 1001 | 121
+10 | 1010 | 122
+11 | 1011 | 211
+12 | 1100 | 212
+13 | 1101 | 221
+14 | 1110 | 222
+15 | 1111 | 1111
+16 | 10000 | 1112
