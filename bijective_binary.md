@@ -14,7 +14,7 @@ The question is, what is the most optimal base to have the best balance of numbe
 
 Thus far, the best integer base was considered 3. (See the [wikipedia page](https://en.wikipedia.org/wiki/Radix_economy) to understand why.)
 
-As a result, people brought up ideas of building Ternary based digital logic gates that can take advantage of this optimal base. See (Ternary computer)[https://en.wikipedia.org/wiki/Ternary_computer].
+As a result, people brought up ideas of building Ternary based digital logic gates that can take advantage of this optimal base. See [Ternary computer](https://en.wikipedia.org/wiki/Ternary_computer).
 
 However, recently I came up with an alternative representation of numbers, that provides a significantly better radix economy than base 3, and doesn't require as much effort to convert.
 
