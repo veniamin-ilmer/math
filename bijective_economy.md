@@ -72,6 +72,6 @@ That is significantly smaller!
 
 To make a fair comparison, let me wikipedia's [radix economy table](https://en.wikipedia.org/wiki/Radix_economy#Comparing_different_bases):
 
-Base b | Avg E(b, N)<br> from 1 to 6 | Avg E(b, N)<br> from 1 to 43 | Avg E(b, N)<br> from 1 to 182 | Avg E(b, N)<br> from 1 to 5329 | E(b) / E(*e*)
+Base b | Avg E(b, N)<br> N = 1 to 6 | Avg E(b, N)<br> N = 1 to 43 | Avg E(b, N)<br> N = 1 to 182 | Avg E(b, N)<br> N = 1 to 5329 | E(b) / E(*e*)
 ---: | ---: | ---: | ---: | ---: | ---:
 1 | 3.5 | 22.0 | 91.5 | 2,665.0 | Infinite
