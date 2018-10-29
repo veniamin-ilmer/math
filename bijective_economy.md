@@ -87,6 +87,8 @@ As you can see, Bijective 2 has a better radix economy than Bijective 3, so impl
 
 ## Digit Storage Challenge
 
+### Background
+
 Although it feel like we just magically got an extra set of information using bijective base 2, there is one crutial piece of information that requires extra memory: The number's digit size.
 
 Let me explain:
@@ -130,4 +132,32 @@ Each of these are considered different commands, that use alternative math logic
 Essentially, there is a consequence: More varing types of integer types (8 bit, 16 bit, etc), cause an increase of code memory requirements. This drives up the radix economy.
 
 Additionally, since we are restricted to having the digit size as 8 bits, for example, instead of 6 or 7, that drives up the radix economy too.
+
+In order to calculate the new radix economy, we have to take into account the storage of all the extra zeros.
+
+### Digital Ordinary Binary Radix Economy
+Let us assume that in most cases, a programmer will able to predict the number size, and always choose the most efficient number type.
+
+In this case, the first 256 numbers will require 8 bits of data, then up to 64 K will require 16 bits of data, etc.
+
+This means, when calculating the radix economy, we will need to understand the digits in this format:
+
+Decimal Digital Binary
+---: | ---:
+0 | 00000000
+1 | 00000001
+2 | 00000010
+3 | 00000011
+4 | 00000100
+5 | 00000101
+... | ...
+253 | 11111101
+254 | 11111110
+255 | 11111111
+256 | 0000000100000000
+257 | 0000000100000001
+258 | 0000000100000010
+259 | 0000000100000011
+260 | 0000000100000100
+... | ...
 
