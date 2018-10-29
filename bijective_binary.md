@@ -24,7 +24,7 @@ However, recently I came up with an alternative representation of numbers, that 
 I'll provide an example with base 2:
 
 Decimal | Ordinary Base 2 | Bijective Base 2
---- | --- | ---
+---:| ---:| ---:
 1 | 1 | 1
 2 | 10 | 2
 3 | 11 | 11
