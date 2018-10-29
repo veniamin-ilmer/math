@@ -142,7 +142,7 @@ In this case, the first 256 numbers will require 8 bits of data, then up to 64 K
 
 This means, when calculating the radix economy, we will need to understand the digits in this format:
 
-Decimal Digital Binary
+Decimal | Digital Binary
 ---: | ---:
 0 | 00000000
 1 | 00000001
