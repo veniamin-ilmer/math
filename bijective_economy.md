@@ -47,3 +47,31 @@ Decimal | Ordinary Base 2 | Bijective Base 2
 14 | 1110 | 222
 15 | 1111 | 1111
 16 | 10000 | 1112
+
+Notice how the bijective binary number of digits grow slower than the ordinary number of digits, even though they technically use the same base: 2.
+
+I realized that system has a signficantly better radix economy than any ordinary base!
+
+## Bijective Binary Economy
+
+The way that you'd calculate a radix economy of any base is by multiplying the number of digits, by the num of varieties a digits can be.
+
+For binary, there are only two varieties of digits used: 0 and 1.
+
+For bijective binary, there are also only two varieties of digits used: 1 and 2.
+
+If we count up the number of digits used from the table above, and multiply it by the variety of digits, then divide it by the count of numbers we can calculate the average radix economy.
+
+Average Radix Economy = Sum of Count of Digits / Count of Numbers * Variety of Digits
+
+For ordinary binary, the radix economy = 54 / 16 * 2 = 6.75
+
+For bijective binary, the radix economy = 42 / 16 * 2 = 5.25
+
+That is significantly smaller!
+
+To make a fair comparison, let me wikipedia's [radix economy table](https://en.wikipedia.org/wiki/Radix_economy#Comparing_different_bases):
+
+Base b | Avg E(b, N) from 1 to 6 | Avg E(b, N) from 1 to 43 | Avg E(b, N) from 1 to 182 | Avg E(b, N) from 1 to 5329 | E(b) / E(*e*)
+---: | ---: | ---: | ---: | ---: | ---:
+1 | 3.5 | 22.0 | 91.5 | 2,665.0 | Infinite
