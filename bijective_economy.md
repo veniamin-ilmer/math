@@ -97,6 +97,7 @@ Let zero equal to the maximum number available for the current register.
 So for example, if storing numbers in a 4 bit register, here is how the number would be translated:
 
 Electrical Up / Down Bits | Bijective 2 | Decimal Translation
+---: | ---: | ---:
 D,D,D,D | 1 | 1
 D,D,D,U | 2 | 2
 D,D,U,D | 21 | 3
