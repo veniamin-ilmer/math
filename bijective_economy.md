@@ -75,3 +75,48 @@ To make a fair comparison, let me wikipedia's [radix economy table](https://en.w
 Base b | Avg E(b, N)<br> N = 1 to 6 | Avg E(b, N)<br> N = 1 to 43 | Avg E(b, N)<br> N = 1 to 182 | Avg E(b, N)<br> N = 1 to 5329 | E(b) / E(*e*)
 ---: | ---: | ---: | ---: | ---: | ---:
 1 | 3.5 | 22.0 | 91.5 | 2,665.0 | Infinite
+2 | 4.7 | 9.3 | 13.3 | 22.9 | 1.0615
+*e* | 4.5 | 9.0 | 12.9 | 22.1 | 1.0000
+3 | 5.0 | 9.5 | 13.1 | 22.2 | 1.0046
+4 | 6.0 | 10.3 | 14.2 | 23.9 | 1.0615
+5 | 6.7 | 11.7 | 15.8 | 26.3 | 1.1429
+Bijective 2 | 3.3 | 7.6 | 11.4 | 20.9 | 0.9457
+Bijective 3 | 4.5 | 8.2 | ... | ... | ...
+
+As you can see, Bijective 2 has a better radix economy than Bijective 3, so implementing this in digital electronics will be easier using the existing base 2 system.
+
+## Technical Challenges
+
+### Zero
+Although we have eliminated zeros, computers would still need to represent that number somehow.
+
+I'd recommend 0 to be treated as a special number.
+
+Let zero equal to the maximum number available for the current register.
+
+So for example, if storing numbers in a 4 bit register, here is how the number would be translated:
+
+Electrical Up / Down Bits | Bijective 2 | Decimal Translation
+D,D,D,D | 1 | 1
+D,D,D,U | 2 | 2
+D,D,U,D | 21 | 3
+D,D,U,U | 22 | 4
+D,U,D,D | 211 | 5
+D,U,D,U | 212 | 6
+D,U,U,D | 221 | 7
+D,U,U,U | 222 | 8
+U,D,D,D | 2111 | 9
+U,D,D,U | 2112 | 10
+U,D,U,D | 2121 | 11
+U,D,U,U | 2122 | 12
+U,U,D,D | 2211 | 13
+U,U,D,U | 2212 | 14
+U,U,U,D | 2221 | 15
+U,U,U,U | 2222 | 0
+
+### Digit Storage
+Although it feel like we just magically got an extra set of information using bijective base 2, there is one crutial piece of information that requires extra memory: The number's digit size.
+
+Let me explain:
+
+Let's say you want to store the number 1 as a byte in memory.
