@@ -94,7 +94,7 @@ I'd recommend 0 to be treated as a special number.
 
 Let zero equal to the maximum number available for the current register.
 
-So for example, if storing numbers in a 4 bit register, here is how the number would be translated:
+So for example, if storing an unsigned integer in a 4 bit register, here is how the number would be translated:
 
 Electrical Up / Down Bits | Bijective 2 | Decimal Translation
 ---: | ---: | ---:
@@ -121,3 +121,9 @@ Although it feel like we just magically got an extra set of information using bi
 Let me explain:
 
 Let's say you want to store the number 1 as a byte in memory.
+
+How does it normally get stored?
+
+Well, it would be stored as 00000001.
+
+In our bijective number system, 0 does not normally exist. We only have 1 and 2. Adding in a zero for space padding will add in an extra digit variety, which will increase our matrix economy, which we are trying to avoid!
