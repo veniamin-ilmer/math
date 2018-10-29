@@ -21,7 +21,13 @@ However, recently I came up with an alternative representation of numbers, that 
 ### Bijective Binary
 [Bijective Numeration](https://en.wikipedia.org/wiki/Bijective_numeration) is an alternative representation of numbers, that does not use the number 0 as a digit, and jumps directly to 1.
 
-I'll provide an example with base 2:
+So, for base 2, instead of 0 and 1, the numbers would be 1 and 2.
+
+For base 3, instead of 0, 1, 2, the numbers would be 1, 2, 3.
+
+For base 4, instead of 0, 1, 2, 3, the numbers would be 1, 2, 3, 4.
+
+I'll provide a full example with base 2:
 
 Decimal | Ordinary Base 2 | Bijective Base 2
 ---:| ---:| ---:
