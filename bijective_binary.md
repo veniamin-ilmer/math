@@ -12,7 +12,7 @@ More digits per number require more memory. More values per digit require more m
 
 The question is, what is the most optimal base to have the best balance of number digits vs variety of digits?
 
-Thus far, the best integer base was considered 3. (See the [wikipedia page](https://en.wikipedia.org/wiki/Radix_economy) to see details why.)
+Thus far, the best integer base was considered 3. (See the [wikipedia page](https://en.wikipedia.org/wiki/Radix_economy) to understand why.)
 
 As a result, people brought up ideas of building Ternary based digital logic gates that can take advantage of this optimal base. See (Ternary computer)[https://en.wikipedia.org/wiki/Ternary_computer].
 
