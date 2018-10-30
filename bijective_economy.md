@@ -180,3 +180,9 @@ Compare this to:
 Bijective Base 6 | Left Pinky | Left Ring | Left Middle | Left Pointer | Left Thumb | Right Thumb | Right Pointer | Right Middle | Right Ring | Right Pinky
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 1 | Down | Down | Down | Down | Up | Down | Down | Down | Down | Down
+2 | Down | Down | Down | Up | Up | Down | Down | Down | Down | Down
+3 | Down | Down | Up | Up | Up | Down | Down | Down | Down | Down
+4 | Down | Up | Up | Up | Up | Down | Down | Down | Down | Down
+5 | Up | Up | Up | Up | Up | Down | Down | Down | Down | Down
+6 | Down | Down | Down | Down | Down | Down | Down | Down | Down | Down
+11 | Down | Down | Down | Down | Up | Up | Down | Down | Down | Down
