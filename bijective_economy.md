@@ -16,7 +16,7 @@ Thus far, the best integer base was considered 3. (See the [wikipedia page](http
 
 As a result, people brought up ideas of building Ternary based digital logic gates that can take advantage of this optimal base. See [Ternary computer](https://en.wikipedia.org/wiki/Ternary_computer).
 
-However, recently I came up with an alternative representation of numbers, that provides a significantly better radix economy than base 3.
+I came up with an alternative representation of numbers, that provides a significantly better radix economy than base 3. Although it still cannot be used in computers, it can be used for other purposes.
 
 ### Bijective Binary
 [Bijective Numeration](https://en.wikipedia.org/wiki/Bijective_numeration) is an alternative representation of numbers, that does not use the number 0 as a digit, and jumps directly to 1.
@@ -86,7 +86,6 @@ Bijective 3 | 4.5 | 8.2 | ... | ... | ...
 As you can see, Bijective 2 has a better radix economy than even ordinary base *e*.
 
 ## Computer Storage Issue
-
 Although it feels like we just magically got an extra set of information using bijective base 2, there is one crutial piece of information that requires extra memory: The number's digit size.
 
 Let's say you want to store the number 1 as a byte in memory.
@@ -127,9 +126,19 @@ All of these factors makes it impractical to implement bijective numbers into co
 
 Even if we implement some type of variable size number system, computers are not good optimizing the memory use - You'd end up with fragmented memory, which would defeat the memory optimization of the bijective system.
 
-Code runs more optimally when we can assume that the digit quantity does not change.
+Code runs more optimally when we can assume that the digit quantity does not change. And bijective numbers' economy depends on a flexible digit amount.
 
 ## Non-Electrical Storage
 If memory fragmentation is not a problem, then Bijective Binary numbers shine.
 
 A simple example for use is finger counting.
+
+Let's compare finger counting using base 6.
+
+Here's a table of how you'd show your fingers in base 6, to someone far away, with ordinary numbers vs bijective numbers:
+
+### Ordinary Base 6 Finger Counting
+
+Base 6 | Left Pinky | Left Ring | Left Middle | Left Pointer | Left Thumb | Right Thumb | Right Pointer | Right Middle | Right Ring | Right Pinky
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+1 | Down | Down | Down | Down | Up | Down | Down | Down | Down | Down
