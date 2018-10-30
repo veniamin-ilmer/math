@@ -137,8 +137,46 @@ Let's compare finger counting using base 6.
 
 Here's a table of how you'd show your fingers in base 6, to someone far away, with ordinary numbers vs bijective numbers:
 
-### Ordinary Base 6 Finger Counting
+### Base 6 Finger Counting
+Ordinary Base 6 | Left Pinky | Left Ring | Left Middle | Left Pointer | Left Thumb | Right Thumb | Right Pointer | Right Middle | Right Ring | Right Pinky
+--- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
+1 | Down | Down | Down | Down | Up | Down | Down | Down | Down | Down
+2 | Down | Down | Down | Up | Up | Down | Down | Down | Down | Down
+3 | Down | Down | Up | Up | Up | Down | Down | Down | Down | Down
+4 | Down | Up | Up | Up | Up | Down | Down | Down | Down | Down
+5 | Up | Up | Up | Up | Up | Down | Down | Down | Down | Down
+10 | Down | Down | Down | Down | Down | Up | Down | Down | Down | Down
+11 | Down | Down | Down | Down | Up | Up | Down | Down | Down | Down
+12 | Down | Down | Down | Up | Up | Up | Down | Down | Down | Down
+13 | Down | Down | Up | Up | Up | Up | Down | Down | Down | Down
+14 | Down | Up | Up | Up | Up | Up | Down | Down | Down | Down
+15 | Up | Up | Up | Up | Up | Up | Down | Down | Down | Down
+20 | Down | Down | Down | Down | Down | Up | Up | Down | Down | Down
+21 | Down | Down | Down | Down | Up | Up | Up | Down | Down | Down
+22 | Down | Down | Down | Up | Up | Up | Up | Down | Down | Down
+23 | Down | Down | Up | Up | Up | Up | Up | Down | Down | Down
+24 | Down | Up | Up | Up | Up | Up | Up | Down | Down | Down
+25 | Up | Up | Up | Up | Up | Up | Up | Down | Down | Down
+30 | Down | Down | Down | Down | Down | Up | Up | Up | Down | Down
+31 | Down | Down | Down | Down | Up | Up | Up | Up | Down | Down
+32 | Down | Down | Down | Up | Up | Up | Up | Up | Down | Down
+33 | Down | Down | Up | Up | Up | Up | Up | Up | Down | Down
+34 | Down | Up | Up | Up | Up | Up | Up | Up | Down | Down
+35 | Up | Up | Up | Up | Up | Up | Up | Up | Down | Down
+40 | Down | Down | Down | Down | Down | Up | Up | Up | Up | Down
+41 | Down | Down | Down | Down | Up | Up | Up | Up | Up | Down
+42 | Down | Down | Down | Up | Up | Up | Up | Up | Up | Down
+43 | Down | Down | Up | Up | Up | Up | Up | Up | Up | Down
+44 | Down | Up | Up | Up | Up | Up | Up | Up | Up | Down
+45 | Up | Up | Up | Up | Up | Up | Up | Up | Up | Down
+50 | Down | Down | Down | Down | Down | Up | Up | Up | Up | Up
+51 | Down | Down | Down | Down | Up | Up | Up | Up | Up | Up
+52 | Down | Down | Down | Up | Up | Up | Up | Up | Up | Up
+53 | Down | Down | Up | Up | Up | Up | Up | Up | Up | Up
+54 | Down | Up | Up | Up | Up | Up | Up | Up | Up | Up
+55 | Up | Up | Up | Up | Up | Up | Up | Up | Up | Up
 
-Base 6 | Left Pinky | Left Ring | Left Middle | Left Pointer | Left Thumb | Right Thumb | Right Pointer | Right Middle | Right Ring | Right Pinky
+Compare this to:
+Bijective Base 6 | Left Pinky | Left Ring | Left Middle | Left Pointer | Left Thumb | Right Thumb | Right Pointer | Right Middle | Right Ring | Right Pinky
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 1 | Down | Down | Down | Down | Up | Down | Down | Down | Down | Down
