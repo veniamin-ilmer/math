@@ -16,7 +16,7 @@ Thus far, the best integer base was considered 3. (See the [wikipedia page](http
 
 As a result, people brought up ideas of building Ternary based digital logic gates that can take advantage of this optimal base. See [Ternary computer](https://en.wikipedia.org/wiki/Ternary_computer).
 
-However, recently I came up with an alternative representation of numbers, that provides a significantly better radix economy than base 3, and doesn't require as much effort to convert.
+However, recently I came up with an alternative representation of numbers, that provides a significantly better radix economy than base 3.
 
 ### Bijective Binary
 [Bijective Numeration](https://en.wikipedia.org/wiki/Bijective_numeration) is an alternative representation of numbers, that does not use the number 0 as a digit, and jumps directly to 1.
@@ -83,15 +83,11 @@ Base b | Avg E(b, N)<br> N = 1 to 6 | Avg E(b, N)<br> N = 1 to 43 | Avg E(b, N)<
 Bijective 2 | 3.3 | 7.6 | 11.4 | 20.9 | 0.9457
 Bijective 3 | 4.5 | 8.2 | ... | ... | ...
 
-As you can see, Bijective 2 has a better radix economy than Bijective 3, so implementing this in digital electronics will be easier using the existing base 2 system.
+As you can see, Bijective 2 has a better radix economy than even ordinary base *e*.
 
-## Electronic Storage Challenge
+## Computer Storage Issue
 
-### Background
-
-Although it feel like we just magically got an extra set of information using bijective base 2, there is one crutial piece of information that requires extra memory: The number's digit size.
-
-Let me explain:
+Although it feels like we just magically got an extra set of information using bijective base 2, there is one crutial piece of information that requires extra memory: The number's digit size.
 
 Let's say you want to store the number 1 as a byte in memory.
 
@@ -101,10 +97,6 @@ Well, it would be stored as 00000001.
 
 In our bijective number system, 0 does not normally exist. We only have 1 and 2. Adding in a zero for space padding will add in an extra digit variety, which will increase our matrix economy, which we are trying to avoid!
 
-I have a solution to this problem, but in order to show it, I'm going to need to show how computers currently represent data.
-
-I'll present this from the perspective of x86 computers, since these are most popular, but you can assume this is applicable/relatable to most CPU variants.
-
 Integers can be represented in four different ways (unsigned):
 
 * AL - 8 bit register, containing numbers 0 to 255.
@@ -112,7 +104,7 @@ Integers can be represented in four different ways (unsigned):
 * EAX - 32 bit register, containing numbers 0 to 4,294,967,295.
 * RAX - 64 bit register, containing numbers 0 to 18,446,744,073,709,551,615.
 
-When saving information to the memory, the programmer has to know in advance, how big the number will be.
+When saving numbers to the memory, the programmer/compiler has to know/predict in advance, how big the number will be.
 
 For example, if they know the number will be really small, like the number 3 or 10, then they can choose to store it in an 8 bit register.
 
@@ -131,52 +123,13 @@ Each of these are considered different commands, that use alternative math logic
 
 Essentially, there is a consequence: More varing types of integer types (8 bit, 16 bit, etc), cause an increase of code memory requirements. This drives up the radix economy.
 
-Additionally, since we are restricted to having the digit size as 8 bits, for example, instead of 6 or 7, that drives up the radix economy too.
+All of these factors makes it impractical to implement bijective numbers into computers.
 
-In order to calculate the new radix economy, we have to take into account the storage of all the extra zeros.
+Even if we implement some type of variable size number system, computers are not good optimizing the memory use - You'd end up with fragmented memory, which would defeat the memory optimization of the bijective system.
 
-### Electronic Ordinary Binary Radix Economy
-For simplicity, let's assume we are only working with a byte.
+Code runs more optimally when we can assume that the digit quantity does not change.
 
-In this case, all first 256 numbers will require 8 bits of data:
+## Non-Electrical Storage
+If memory fragmentation is not a problem, then Bijective Binary numbers shine.
 
-Decimal | Electronic Binary
----: | ---:
-0 | 00000000
-1 | 00000001
-2 | 00000010
-3 | 00000011
-4 | 00000100
-5 | 00000101
-... | ...
-253 | 11111101
-254 | 11111110
-255 | 11111111
-
-From here we can calculate, the sum of the number of binary digits from 0 to 255 = 256 * 8 = 2,048.
-
-Using the radix economy formula:
-
-    Average Radix Economy = Sum of Count of Digits / Count of Numbers * Variety of Digits
-
-So the actual digital radix economy comes out to:
-
-    2,048 * 2 / 256
-    =
-    16
-
-Compare this to the radix economy of pure binary numbers from 1 to 256:
-
-    14
-
-In addition to the extra data memory required that is just wasted on zeros, a bit more code memory will be needed for storing the operation types (8 bit, 16 bit, etc).
-
-### Electronic Bijective Binary Radix Economy
-Since zeros are not permitted in a bijective binary system, we don't have the option to pad numbers with zeros to set the number size.
-
-One option is to expand the 8 bit, 16 bit, 32 bit opcodes to also allow for 1 bit, 2 bit, 3 bit, 4 bit, etc commands, but that would require a lot of extra code memory for each sets of commands.
-
-Another option is to remove the concept of adding 8 bit, 16 bit, etc numbers, and instead have just one set of math commands that handles variable numbers.
-
-Variable integer sizes remove the programmer/compiler's responsibility to predict what the number size will be, and potentially make the memory use much more efficient.
-
+A simple example for use is finger counting.
