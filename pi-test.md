@@ -13,26 +13,36 @@ Assume:
 
 ## Euclidean geometry
 
-Pi = C / d
+> Pi = C / d
+> Tau = C / r
 
-Tau = C / r
-
-*C = circumference, d = diameter, r = radius *
+*C = circumference, d = diameter, r = radius*
 
 * +1 point for Pi
 * +1 point for Tau
 
-A = Pi * r ^ 2
-
-A = Quau * d ^ 2
+> A = Pi * r ^ 2
+> A = Quau * d ^ 2
 
 *A = Area*
 
 * +1 point for Pi
 * +1 point for Quau
 
-> V = 4 / 3 * Pi * r ^ 3
+> V = 1 / 3 * Quau * r ^ 3
 
-V = 1 / 3 * Quau * r ^ 3
+*V = Volume*
 
 * +1 point for Quau
+
+> SA = Quau * r ^ 2
+
+*SA = Surface Area*
+
+* +1 point for Quau
+
+## Total Points
+
+* Quau = 3
+* Pi = 2
+* Tau = 1
