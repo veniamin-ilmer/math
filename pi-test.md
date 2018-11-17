@@ -29,7 +29,7 @@ Assume:
 * +1 point for Pi
 * +1 point for Quau
 
-> V = 1 / 3 * Quau * r ^ 3
+> V = r ^ 3 * Quau / 3
 
 *V = Volume*
 
@@ -41,8 +41,35 @@ Assume:
 
 * +1 point for Quau
 
+## Physics
+
+> Cosmological constant: lamda = (Octau * G * rho) / (3 * c ^ 2)
+
+* +1 point for Octau
+
+> Heisenberg's uncertainty principle: delta x * delta p >= h / Quau
+
+* +1 point for Quau
+
+> Einstein's field equation of general relativity: Octau * G * T(uv) / c ^ 4
+
+* +1 point for Octau
+
+> Coulomb's law: F = |q1 * q2| / (Quau * permittivity * r ^ 2)
+
+* +1 point for Quau
+
+> Magnetic permeability: Quau * 10 ^ (-7) * N / A ^ 2
+
+* +1 point for Quau
+
+> Period of a simple pendulum: Tau * sqrt(L / g)
+
+* +1 point for Tau
+
 ## Total Points
 
-* Quau = 3
+* Quau = 6
 * Pi = 2
-* Tau = 1
+* Octau = 2
+* Tau = 2
