@@ -14,6 +14,7 @@ Assume:
 ## Euclidean geometry
 
 > Pi = C / d
+
 > Tau = C / r
 
 *C = circumference, d = diameter, r = radius*
@@ -22,6 +23,7 @@ Assume:
 * +1 point for Tau
 
 > A = Pi * r ^ 2
+
 > A = Quau * d ^ 2
 
 *A = Area*
