@@ -1,4 +1,4 @@
-#PI Limit Representation
+# PI Limit Representation
 
 Checking online, I couldn't find any simple pi limit representations. Usually they involve a sum or product of numbers, but not a simple limit.
 
