@@ -149,35 +149,13 @@ a <sup>^</sup> b <sub>v</sub> b <sup>^</sup> b <sub>v</sub> b = a
 
 ### *Power* Identities
 
-* 2 <sup>^</sup> 5 = 25
-* 5 <sup>^</sup> 2 = 32
-
----
-
-* 3 <sup>^</sup> a = a * a * a
-* 2 <sup>^</sup> a = a * a
-* 1 <sup>^</sup> a = a
-* 0 <sup>^</sup> a = 1
-* (-1) <sup>^</sup> a = 1 / a
-* (-2) <sup>^</sup> a = 1 / (a * a) = 1 / 2 <sup>^</sup> a
-
----
-
-* 2 <sup>^</sup> (a + b) = (a + b) * (a + b)
-* 3 <sup>^</sup> (a + b) = (a + b) * (a + b) * (a + b)
-* 4 <sup>^</sup> (a + b) = (a + b) * (a + b) * (a + b) * (a + b)
-
----
-
 * a <sup>^</sup> (b * c) = a <sup>^</sup> b * a <sup>^</sup> c
+
 * a <sup>^</sup> (b / c) = a <sup>^</sup> b / a <sup>^</sup> c
 
----
-
 * (a + b) <sup>^</sup> 2 = a <sup>^</sup> 2 * b <sup>^</sup> 2
-* (a - b) <sup>^</sup> 2 = a <sup>^</sup> 2 / b <sup>^</sup> 2
 
----
+* (a - b) <sup>^</sup> 2 = a <sup>^</sup> 2 / b <sup>^</sup> 2
 
 * a <sup>^</sup> (b <sup>^</sup> c) = (a * b) <sup>^</sup> c
 
