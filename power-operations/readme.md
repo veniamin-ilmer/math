@@ -49,7 +49,7 @@ So for example, I have the number 100, and want to keep dividing it by, say 3, u
 * 11.111... / 3 = 3.703...
 * 3.703... / 3 = 1.235...
 
-Since 1.235.. is smaller than 3, we stop divising.
+Since 1.235.. is smaller than 3, we stop dividing.
 
 In total, we needed to divide 4 times, so 4 with some remainder is our answer.
 
