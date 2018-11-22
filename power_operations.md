@@ -141,7 +141,7 @@ After years of use, it's difficult to mentally just redefine exponentiation, so 
 * 2 <sup>^</sup> 5 = 25
 * 5 <sup>^</sup> 2 = 32
 
---
+---
 
 * 3 <sup>^</sup> a = a * a * a
 * 2 <sup>^</sup> a = a * a
@@ -150,7 +150,7 @@ After years of use, it's difficult to mentally just redefine exponentiation, so 
 * (-1) <sup>^</sup> a = 1 / a
 * (-2) <sup>^</sup> a = 1 / (a * a) = 1 / 2 <sup>^</sup> a
 
---
+---
 
 * 2 <sup>^</sup> (a + b) = (a + b) * (a + b) = 2 <sup>^</sup> a + 2 * a * b + 2 <sup>^</sup> b
 * 2 <sup>^</sup> (a - b) = (a - b) * (a - b) = 2 <sup>^</sup> a - 2 * a * b + 2 <sup>^</sup> b * 2 <sup>^</sup>
