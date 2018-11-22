@@ -38,7 +38,7 @@ Since 6 is smaller than 7, we stop subtracting.
 
 In total, we needed to subtract 5 times. Hence, 41 / 7 = about 5.
 
-Moving on, we already know repeat multiplication is exponentation.
+Moving on, we already know repeat multiplication is exponentiation.
 
 Following the pattern, we'd want the reverse of exponentiation to be repeated division.
 
@@ -63,7 +63,7 @@ Even the shorter variant, log<sub>3</sub>(100), is difficult to read.
 
 3 + 4 is much easier to read than add<sub>4</sub>(3).
 
-Let's redefine the reverse of exponentation as:
+Let's redefine the reverse of exponentiation as:
 
 x <sub>v</sub> y = ln(x) / ln(y)
 
@@ -87,7 +87,7 @@ If you'd like to see a list of all identites, [click here](identities.md).
 
 Something that I love about this math operation is that it avoids using `e` by default, and hence can be taught to gradeschool students without involving calculus.
 
-## Exponentation
+## Exponentiation
 
 Although having a single operation for the reverse of exponentiation, is an excellent step towards consistency, there is one more important step we should do.
 
@@ -179,8 +179,8 @@ If you'd like to see a list of all identites (including calculus), [click here](
 
 The changes proposed here are quite difficult for someone with many years of math experience to accept.
 
-However I feel that this alternative method to understand exponentation would save newcomers a lot of confusion.
+However I feel that this alternative method to understand exponentiation would save newcomers a lot of confusion.
 
-I believe consistency with other math operations is crutial to helping us understand exponentation better.
+I believe consistency with other math operations is crutial to helping us understand exponentiation better.
 
 It further opens the doors to a better understanding of higher operations after exponentiation: [Tetration](https://en.wikipedia.org/wiki/Tetration)
