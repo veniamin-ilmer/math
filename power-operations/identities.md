@@ -11,7 +11,7 @@ After years of use, it's difficult to mentally just redefine exponentiation, so 
 
 1 <sup>^</sup> 2 <sup>^</sup> 3 <sub>v</sub> 4 <sup>^</sup> 5 is read as (((1 <sup>^</sup> 2) <sup>^</sup> 3) <sub>v</sub> 4) <sup>^</sup> 5
 
-(You just go left to right. Treat <sup>^</sup> and <sub>v</sub> the same.
+You just go left to right. Treat <sup>^</sup> and <sub>v</sub> the same.
 
 1 + 2 * 3 <sup>^</sup> 5 * 8 <sub>v</sub> 9 / 4 - 10 is read as 1 + (2 * (3 <sup>^</sup> 5) * (8 <sub>v</sub> 9) / 4) - 10
 
