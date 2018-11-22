@@ -1,26 +1,26 @@
 # Power Operations
 
-This is an alternative math representation for exponentation.
+This is an alternative math representation for exponentiation.
 
 ## Motivation
 
 Off the top of your head:
 
-*Multipication* is to *Division*, as *Exponention* is to *what*?
+*Multipication* is to *Division*, as *Exponentiation* is to *what*?
 
-Children learn addition, subtraction, multiplication, and division in grade school, yet exponentation and logarithms are left over for precalculus students to fully understand.
+Children learn addition, subtraction, multiplication, and division in grade school, yet exponentiation and logarithms are left over for precalculus students to fully understand.
 
-Multiplication is repeated addition. Exponentation is repeated multiplication.
+Multiplication is repeated addition. Exponentiation is repeated multiplication.
 
-Yet, exponentation is considered much more complicated than multiplication.
+Yet, exponentiation is considered much more complicated than multiplication.
 
-I feel the reason for this, is a poor representation for exponentation and logarithms.
+I feel the reason for this, is a poor representation for exponentiation and logarithms.
 
 It is inconsistent with all the other math operators, and makes it look quite alien to a grade school student.
 
 ## Building a better representation
 
-### Anti-exponentation
+### Anti-exponentiation
 
 I feel that consistency with the rest of math operators is extremely important.
 
@@ -44,7 +44,7 @@ In total, we needed to subtract 5 times. Hence, 41 / 7 = about 5.
 
 Moving on, we already know repeat multiplication is exponentation.
 
-Following the pattern, we'd want the reverse of exponentation to be repeated division.
+Following the pattern, we'd want the reverse of exponentiation to be repeated division.
 
 So for example, I have the number 100, and want to keep dividing it by, say 3, until the number becomes less than my divisor.
 
@@ -61,11 +61,11 @@ In our current math system, how do we represent this calculation?
 
 Well, that would be ln(100) / ln(3)
 
-Why does the reverse of exponentation require us to use three math operations? Convention.
+Why does the reverse of exponentiation require us to use three math operations? Convention.
 
 Even the shorter variant, log<sub>3</sub>(100), is difficult to read.
 
-3 + 4 is much easier to read than say add<sub>4</sub>(3).
+3 + 4 is much easier to read than add<sub>4</sub>(3).
 
 Let's redefine the reverse of exponentation as:
 
@@ -77,9 +77,9 @@ I will call this operation *apower*, short for anti-power.
 
 ### Exponentation
 
-Although having a single operation for the reverse of exponentation, is an excellent step towards consistency, there is one more important step we should do.
+Although having a single operation for the reverse of exponentiation, is an excellent step towards consistency, there is one more important step we should do.
 
-Exponentation is unusual because the order of operations matter.
+Exponentiation is unusual because the order matters.
 
 a<sup>b</sup> does not equal b<sup>a</sup>
 
@@ -97,7 +97,7 @@ a * b / b * b / b
 
 Visually, it is easy to see that the `b`s cancel out, and we just have `a` remaining.
 
-What about exponentation?
+What about exponentiation?
 
 First, let's see how that looks with standard notation, shall we?
 
@@ -133,3 +133,13 @@ By doing this switch, we finally get a simple answer that is consistent with the
 
 a <sup>^</sup> b <sub>v</sub> b <sup>^</sup> b <sub>v</sub> b
 
+## Properties of *power* and *apower*
+
+After years of use, it's difficult to mentally just redefine exponentiation, so let me go over all of the properties of *power* and *apower* with you:
+
+* 3 <sup>^</sup> a = a * a * a
+* 2 <sup>^</sup> a = a * a
+* 1 <sup>^</sup> a = a
+* 0 <sup>^</sup> a = 1
+* -1 <sup>^</sup> a = 1 / a
+* -2 <sup>^</sup> a = 1 / (a * a) = 1 / 2 <sup>^</sup> a
