@@ -59,9 +59,9 @@ Well, that would be ln(100) / ln(3)
 
 Why does the reverse of exponentiation require us to use three math operations? Convention.
 
-Even the shorter variant, log<sub>3</sub>(100), is difficult to read.
+The shorter variant, log<sub>3</sub>(100), is still unusual compared to all other operations.
 
-3 + 4 is much easier to read than add<sub>4</sub>(3).
+3 + 4 is much easier to read than, for example add<sub>4</sub>(3).
 
 Let's redefine the reverse of exponentiation as:
 
