@@ -79,6 +79,7 @@ Order of operations:
 
 * (pi * i) <sup>^</sup> e = -1
 * (2 * pi * i) <sup>^</sup> e = 1
+* (-1) <sub>v</sub> e = pi * i
 
 ---
 
