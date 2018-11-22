@@ -22,11 +22,11 @@ It is inconsistent with all the other math operators, and makes it look quite al
 
 I feel that consistency with the rest of math operators is extremely important.
 
-* Multiplication involves repeat adding. For example, 7 * 5 or 5 * 7 means you add 7 together 5 times.
+* Multiplication can be calculated with repeat adding. For example, 7 * 5 or 5 * 7 means you add 7 together 5 times.
 
 * Division is the reverse of multiplication, and it can be done with repeat subtraction. For example, 41 / 7 means you start with 41, and keep subtracting it by 7 until the number becomes less than the subtractor. The answer is how many subtractions you did, plus some remainder.
 
-As a reminder, lets divide 40 by 7 with repeated subtraction:
+As a reminder, lets divide 41 by 7 with repeated subtraction:
 
 * 41 - 7 = 34
 * 34 - 7 = 27
