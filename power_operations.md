@@ -137,6 +137,7 @@ a <sup>^</sup> b <sub>v</sub> b <sup>^</sup> b <sub>v</sub> b = a
 
 After years of use, it's difficult to mentally just redefine exponentiation, so let me go over all of the properties of *power* and *apower* with you:
 
+### *Power* Identities
 
 * 2 <sup>^</sup> 5 = 25
 * 5 <sup>^</sup> 2 = 32
@@ -152,11 +153,26 @@ After years of use, it's difficult to mentally just redefine exponentiation, so 
 
 ---
 
-* 2 <sup>^</sup> (a + b) = (a + b) * (a + b) = 2 <sup>^</sup> a + 2 * a * b + 2 <sup>^</sup> b
-* 2 <sup>^</sup> (a - b) = (a - b) * (a - b) = 2 <sup>^</sup> a - 2 * a * b + 2 <sup>^</sup> b * 2 <sup>^</sup>
-* 2 <sup>^</sup> (a * b) = 2 <sup>^</sup> a * 2 <sup>^</sup> b
-* 2 <sup>^</sup> (a / b) = 2 <sup>^</sup> a / 2 <sup>^</sup> b
+* 2 <sup>^</sup> (b + c) = (a + b) * (a + b)
+* 3 <sup>^</sup> (b + c) = (a + b) * (a + b) * (a + b)
+* 4 <sup>^</sup> (b + c) = (a + b) * (a + b) * (a + b) * (a + b)
 
+---
+
+* a <sup>^</sup> (b * c) = a <sup>^</sup> b * a <sup>^</sup> c
+* a <sup>^</sup> (b / c) = a <sup>^</sup> b / a <sup>^</sup> c
+
+---
 
 * (a + b) <sup>^</sup> 2 = a <sup>^</sup> 2 * b <sup>^</sup> 2
 * (a - b) <sup>^</sup> 2 = a <sup>^</sup> 2 / b <sup>^</sup> 2
+
+---
+
+* a <sup>^</sup> (b <sup>^</sup> c) = (a * b) <sup>^</sup> c
+
+### Calculus identities
+
+* (pi * i) <sup>^</sup> e = -1
+* (2 * pi * i) <sup>^</sup> e = 1
+
