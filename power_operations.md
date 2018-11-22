@@ -219,7 +219,19 @@ Order of operations:
 
 ---
 
-Integral (x <sup>^</sup> c) dx = e <sub>v</sub> c * x <sup>^</sup> c + constant
-Integral (c <sup>^</sup> x) dx = (c + 1) ^ x / (c + 1) + constant
-Integral (x <sub>v</sub> c) dx = x * (x <sub>v</sub> c - e <sub>v</sub> c)
-Integral (c <sub>v</sub> x) dx = c <sub>v</sub> e * li(x)
+* Integral (x <sup>^</sup> c) dx = e <sub>v</sub> c * x <sup>^</sup> c + constant
+* Integral (c <sup>^</sup> x) dx = (c + 1) ^ x / (c + 1) + constant
+* Integral (x <sub>v</sub> c) dx = x * (x <sub>v</sub> c - e <sub>v</sub> c)
+* Integral (c <sub>v</sub> x) dx = c <sub>v</sub> e * li(x)
+
+## Algebra with *power* and *apower*
+
+If x <sup>^</sup> y = z then
+
+* x = z <sub>v</sub> y
+* y = (1 / x) <sub>^</sub> z
+
+If x <sub>v</sub> y = z then
+
+* x = z <sub>^</sub> y
+* y = (1 / z) <sub>^</sub> x
