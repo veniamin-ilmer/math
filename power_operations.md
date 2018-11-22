@@ -131,7 +131,7 @@ This means: 2 <sup>^</sup> a = a * a
 
 By doing this switch, we finally get a simple answer that is consistent with the addition and multiplication:
 
-a <sup>^</sup> b <sub>v</sub> b <sup>^</sup> b <sub>v</sub> b
+a <sup>^</sup> b <sub>v</sub> b <sup>^</sup> b <sub>v</sub> b = a
 
 ## Properties of *power* and *apower*
 
@@ -141,5 +141,5 @@ After years of use, it's difficult to mentally just redefine exponentiation, so 
 * 2 <sup>^</sup> a = a * a
 * 1 <sup>^</sup> a = a
 * 0 <sup>^</sup> a = 1
-* -1 <sup>^</sup> a = 1 / a
-* -2 <sup>^</sup> a = 1 / (a * a) = 1 / 2 <sup>^</sup> a
+* (-1) <sup>^</sup> a = 1 / a
+* (-2) <sup>^</sup> a = 1 / (a * a) = 1 / 2 <sup>^</sup> a
