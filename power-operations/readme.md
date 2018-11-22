@@ -10,7 +10,7 @@ Off the top of your head:
 
 Children learn addition, subtraction, multiplication, and division in grade school, yet exponentiation and logarithms are left over for precalculus students to fully understand.
 
-Multiplication is repeated addition. Exponentiation is repeated multiplication.
+Multiplication can be introduced as repeated addition. Exponentiation can be introduced as repeated multiplication.
 
 Yet, exponentiation is considered much more complicated than multiplication.
 
