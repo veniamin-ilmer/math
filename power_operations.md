@@ -229,9 +229,9 @@ Order of operations:
 If x <sup>^</sup> y = z then
 
 * x = z <sub>v</sub> y
-* y = (1 / x) <sub>^</sub> z
+* y = (1 / x) <sup>^</sup> z
 
 If x <sub>v</sub> y = z then
 
-* x = z <sub>^</sub> y
-* y = (1 / z) <sub>^</sub> x
+* x = z <sup>^</sup> y
+* y = (1 / z) <sup>^</sup> x
