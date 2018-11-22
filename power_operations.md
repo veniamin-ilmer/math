@@ -18,9 +18,7 @@ I feel the reason for this, is a poor representation for exponentiation and loga
 
 It is inconsistent with all the other math operators, and makes it look quite alien to a grade school student.
 
-## Building a better representation
-
-### Anti-exponentiation
+## Anti-exponentiation
 
 I feel that consistency with the rest of math operators is extremely important.
 
@@ -75,7 +73,19 @@ Hence, in our example 100 <sub>v</sub> 3 = about 4
 
 I will call this operation *apower*, short for anti-power.
 
-### Exponentation
+### *Apower* Identities
+
+Like all basic math operations, *apower* has rules that you can use do solve equations:
+
+* a <sub>v</sub> c + b <sub>v</sub> c = (a * b) <sub>v</sub> c
+
+* a <sub>v</sub> c - b <sub>v</sub> c = (a / b) <sub>v</sub> c
+
+* 1 / a <sub>v</sub> b = b <sub>v</sub> a
+
+* a <sub>v</sub> c / b <sub>v</sub> c = a <sub>v</sub> b
+
+## Exponentation
 
 Although having a single operation for the reverse of exponentiation, is an excellent step towards consistency, there is one more important step we should do.
 
@@ -220,7 +230,7 @@ Order of operations:
 ---
 
 * Integral (x <sup>^</sup> c) dx = e <sub>v</sub> c * x <sup>^</sup> c + constant
-* Integral (c <sup>^</sup> x) dx = (c + 1) ^ x / (c + 1) + constant
+* Integral (c <sup>^</sup> x) dx = (c + 1) <sup>^</sup> x / (c + 1) + constant
 * Integral (x <sub>v</sub> c) dx = x * (x <sub>v</sub> c - e <sub>v</sub> c)
 * Integral (c <sub>v</sub> x) dx = c <sub>v</sub> e * li(x)
 
