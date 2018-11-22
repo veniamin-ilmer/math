@@ -113,6 +113,8 @@ What about exponentiation?
 
 First, let's see how that looks with standard notation, shall we?
 
+If we want to express the same concept with exponents, as we had with addition and multiplication, we are forced into writing this:
+
 ln(b<sup>(ln(b<sup>a</sup>) / ln(b))</sup>) / ln(b)
 
 or:
