@@ -167,9 +167,9 @@ Order of operations:
 
 ---
 
-* 2 <sup>^</sup> (b + c) = (a + b) * (a + b)
-* 3 <sup>^</sup> (b + c) = (a + b) * (a + b) * (a + b)
-* 4 <sup>^</sup> (b + c) = (a + b) * (a + b) * (a + b) * (a + b)
+* 2 <sup>^</sup> (a + b) = (a + b) * (a + b)
+* 3 <sup>^</sup> (a + b) = (a + b) * (a + b) * (a + b)
+* 4 <sup>^</sup> (a + b) = (a + b) * (a + b) * (a + b) * (a + b)
 
 ---
 
