@@ -92,8 +92,8 @@ Order of operations:
 
 * Integral (x <sup>^</sup> c) dx = e <sub>v</sub> c * x <sup>^</sup> c + constant
 * Integral (c <sup>^</sup> x) dx = (c + 1) <sup>^</sup> x / (c + 1) + constant
-* Integral (x <sub>v</sub> c) dx = x * (x <sub>v</sub> c - e <sub>v</sub> c)
-* Integral (c <sub>v</sub> x) dx = c <sub>v</sub> e * li(x)
+* Integral (x <sub>v</sub> c) dx = x * (x <sub>v</sub> c - e <sub>v</sub> c) + constant
+* Integral (c <sub>v</sub> x) dx = c <sub>v</sub> e * li(x) + constant
 
 ## Algebra with *power* and *apower*
 
