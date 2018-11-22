@@ -101,8 +101,8 @@ What about exponentation?
 
 First, let's see how that looks with standard notation, shall we?
 
-a ^ b v b ^ b v b ^ b v b
+a ^ b <sub>v</sub> b <sub>^</sub> b <sub>v</sub> b ^ b <sub>v</sub> b
 
-b<sup>(b<sup>(b<sup>a</sup> v b)</sup> v b)</sup> v b
+b<sup>(b<sup>(b<sup>a</sup> <sub>v</sub> b)</sup> <sub>v</sub> b)</sup> <sub>v</sub> b
 
-ln(b<sup>a</sup>) / ln(b)
+ln(b<sup>(ln(b<sup>(ln(b<sup>a</sup>) / ln(b))</sup>) / ln(b))</sup>) / ln(b)
