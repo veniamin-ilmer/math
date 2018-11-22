@@ -87,6 +87,8 @@ If you'd like to see a list of all identites, [click here](identities.md).
 
 Something that I love about this math operation is that it avoids using `e` by default, and hence can be taught to gradeschool students without involving calculus.
 
+a <sub>v</sub> b feels like a normal math operation, unlike log<sub>b</sub>(a)
+
 ## Exponentiation
 
 Although having a single operation for the reverse of exponentiation, is an excellent step towards consistency, there is one more important step we should do.
@@ -111,8 +113,6 @@ Visually, it is easy to see that the `b`s cancel out, and we just have `a` remai
 
 What about exponentiation?
 
-First, let's see how that looks with standard notation, shall we?
-
 If we want to express the same concept with exponents, as we had with addition and multiplication, we are forced into writing this:
 
 ln(b<sup>(ln(b<sup>a</sup>) / ln(b))</sup>) / ln(b)
@@ -121,7 +121,7 @@ or:
 
 log<sub>b</sub>(b<sup>(log<sub>b</sub>(b<sup>a</sup>))</sup>)
 
-Thought that was hard to read? It was even harder to write up.
+Not the easiest to read..
 
 Okay, now let's convert it to use the new *apower* operator:
 
@@ -146,6 +146,14 @@ This means: 2 <sup>^</sup> a = a * a
 By doing this switch, we finally get a simple answer that is consistent with the addition and multiplication:
 
 a <sup>^</sup> b <sub>v</sub> b <sup>^</sup> b <sub>v</sub> b = a
+
+I love how consistent this feels as in addition/subtraction and multiplication/division.
+
+It feels great to be be able to do this:
+
+* a <sup>^</sup> b <sub>v</sub> b = a
+
+* a <sub>v</sub> b <sup>^</sup> b = a
 
 ### *Power* Identities
 
