@@ -2,6 +2,11 @@
 
 After years of use, it's difficult to mentally just redefine exponentiation, so let me go over all of the properties of *power* and *apower* with you:
 
+## Definition
+
+* a <sup>^</sup> b = b<sup>a</sup>
+* a <sub>v</sub> b = ln(a) / ln(b)
+
 ## Order of operations
 
 1 <sup>^</sup> 2 <sup>^</sup> 3 <sub>v</sub> 4 <sup>^</sup> 5 is read as (((1 <sup>^</sup> 2) <sup>^</sup> 3) <sub>v</sub> 4) <sup>^</sup> 5
