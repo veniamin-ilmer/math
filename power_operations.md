@@ -137,6 +137,20 @@ a <sup>^</sup> b <sub>v</sub> b <sup>^</sup> b <sub>v</sub> b = a
 
 After years of use, it's difficult to mentally just redefine exponentiation, so let me go over all of the properties of *power* and *apower* with you:
 
+### Order of operations
+
+1 <sup>^</sup> 2 <sup>^</sup> 3 <sub>v</sub> 4 <sup>^</sup> 5 is read as (((1 <sup>^</sup> 2) <sup>^</sup> 3) <sub>v</sub> 4) <sup>^</sup> 5
+
+(You just go left to right. Treat <sup>^</sup> and <sub>v</sub> the same.
+
+1 + 2 * 3 <sup>^</sup> 5 * 8 <sub>v</sub> 9 / 4 - 10 is read as 1 + (2 * (3 <sup>^</sup> 5) * (8 <sub>v</sub> 9) / 4) - 10
+
+Order of operations:
+
+1. *power* and *apower*
+2. *multiplication* and *division*
+3. *addition* and *subtraction*
+
 ### *Power* Identities
 
 * 2 <sup>^</sup> 5 = 25
@@ -170,6 +184,21 @@ After years of use, it's difficult to mentally just redefine exponentiation, so 
 ---
 
 * a <sup>^</sup> (b <sup>^</sup> c) = (a * b) <sup>^</sup> c
+
+### *APower* Identities
+
+* 10000 <sub>v</sub> 10 = 4
+* 64 <sub>v</sub> 2 = 6
+
+---
+
+* a <sub>v</sub> c + b <sub>v</sub> c = (a * b) <sub>v</sub> c
+* a <sub>v</sub> c - b <sub>v</sub> c = (a / b) <sub>v</sub> c
+
+---
+
+* 1 / a <sub>v</sub> b = b <sub>v</sub> a
+* a <sub>v</sub> c / b <sub>v</sub> c = a <sub> b
 
 ### Calculus identities
 
