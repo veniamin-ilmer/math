@@ -197,6 +197,11 @@ Order of operations:
 
 ---
 
+* a * b <sub>v</sub> c = a <sup>^</sup> b <sub>v</sub> c
+* (1 / a) * b <sub>v</sub> c = b <sub>v</sub> a <sup>^</sup> c
+
+---
+
 * 1 / a <sub>v</sub> b = b <sub>v</sub> a
 * a <sub>v</sub> c / b <sub>v</sub> c = a <sub> b
 
@@ -205,3 +210,16 @@ Order of operations:
 * (pi * i) <sup>^</sup> e = -1
 * (2 * pi * i) <sup>^</sup> e = 1
 
+---
+
+* Derivative (x <sup>^</sup> c) / dx = c <sub>v</sub> e * x <sup>^</sup> c
+* Derivative (c <sup>^</sup> x) / dx = c * (c - 1) <sup>^</sup> x
+* Derivative (x <sub>v</sub> c) / dx = e <sub>v</sub> c / x
+* Derivative (c <sub>v</sub> x) / dx = -c <sub>v</sub> x / x <sup>^</sup> x <sub>v</sub> e
+
+---
+
+Integral (x <sup>^</sup> c) dx = e <sub>v</sub> c * x <sup>^</sup> c + constant
+Integral (c <sup>^</sup> x) dx = (c + 1) ^ x / (c + 1) + constant
+Integral (x <sub>v</sub> c) dx = x * (x <sub>v</sub> c - e <sub>v</sub> c)
+Integral (c <sub>v</sub> x) dx = c <sub>v</sub> e * li(x)
