@@ -24,13 +24,9 @@ I feel that consistency with the rest of math operators is extremely important.
 
 Hence, let's start with the basic math operators.
 
-* Addition involves repeat incrementing (Adding 1). For example, 7 + 5 or 5 + 7 means you start with 7, then keep incrementing it 5 times.
-
-* Subtraction is the reverse of addition, hence it involves repeat decrementing. For example, 20 - 7 means you start with 20, then keep decrementing it 7 times.
-
 * Multiplication involves repeat adding. For example, 7 * 5 or 5 * 7 means you add 7 together 5 times.
 
-* Division is the reverse of multiplication, and it can be done with repeat subtraction. For example, 41 / 7 means you start with 41, and keep dividing it by 7 until you run out of numbers to divide. The answer is how many divisions you did.
+* Division is the reverse of multiplication, and it can be done with repeat subtraction. For example, 41 / 7 means you start with 41, and keep subtracting it by 7 until the number becomes less than the divisior. The answer is how many subtractions you did, plus some remainder.
 
 As a reminder, lets divide 40 by 7 with repeated subtraction:
 
@@ -44,7 +40,7 @@ Since 6 is smaller than 7, we stop subtracting.
 
 In total, we needed to subtract 5 times. Hence, 41 / 7 = about 5.
 
-Alright, we already know, repeat multiplication is exponentation.
+Moving on, we already know repeat multiplication is exponentation.
 
 Following the pattern, we'd want the reverse of exponentation to be repeated division.
 
@@ -63,7 +59,7 @@ In our current math system, how do we represent this calculation?
 
 Well, that would be ln(100) / ln(3)
 
-Why is the reverse of exponentation equal to three math operations?
+Why does the reverse of exponentation require us to three math operations? Convention.
 
 That makes things confusing. Let's redefine the reverse of exponentation as:
 
