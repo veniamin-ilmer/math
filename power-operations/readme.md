@@ -155,6 +155,12 @@ It feels great to be be able to do this:
 
 * a <sub>v</sub> b <sup>^</sup> b = a
 
+To be clear:
+
+1 <sup>^</sup> 2 <sup>^</sup> 3 <sub>v</sub> 4 <sup>^</sup> 5 is read as (((1 <sup>^</sup> 2) <sup>^</sup> 3) <sub>v</sub> 4) <sup>^</sup> 5
+
+You just go left to right. Treat <sup>^</sup> and <sub>v</sub> the same.
+
 ### *Power* Identities
 
 * a <sup>^</sup> (b * c) = a <sup>^</sup> b * a <sup>^</sup> c
