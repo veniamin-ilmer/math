@@ -88,3 +88,15 @@ Order of operations:
 * Integral (c <sup>^</sup> x) dx = (c + 1) <sup>^</sup> x / (c + 1) + constant
 * Integral (x <sub>v</sub> c) dx = x * (x <sub>v</sub> c - e <sub>v</sub> c)
 * Integral (c <sub>v</sub> x) dx = c <sub>v</sub> e * li(x)
+
+## Algebra with *power* and *apower*
+
+If x <sup>^</sup> y = z then
+
+* x = z <sub>v</sub> y
+* y = (1 / x) <sup>^</sup> z
+
+If x <sub>v</sub> y = z then
+
+* x = z <sup>^</sup> y
+* y = (1 / z) <sup>^</sup> x
