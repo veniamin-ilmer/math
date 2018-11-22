@@ -109,12 +109,27 @@ log<sub>b</sub>(b<sup>(log<sub>b</sub>(b<sup>a</sup>))</sup>)
 
 Thought that was hard to read? It was even harder to write up.
 
-Note that some browsers may not be correctly raising a to the power. i
-
 Okay, now let's convert it to use the new *apower* operator:
 
 b<sup>(b<sup>a</sup> <sub>v</sub> b)</sup> <sub>v</sub> b
 
-Although it looks a little cleaner, it still feels a little messy.
+Although it looks a little cleaner, it still is inconsistent with the addition and multiplication examples.
+
+Biggest difference: Notice how `a` is in the middle of the equation, rather than the left side.
+
+The reason why is that the reverse of exponentiation, reverses the left side of the exponent, rather than the right side of the exponent.
+
+So, perhaps the exponent order is wrong?
+
+Let me redefine *power* as this:
+
+a <sup>^</sup> b = b<sup>a</sup>
+
+I have reversed the order in which something is placed to a power.
+
+This means: 2 <sup>^</sup> a = a * a
+
+By doing this switch, we finally get a simple answer that is consistent with the addition and multiplication:
 
 a <sup>^</sup> b <sub>v</sub> b <sup>^</sup> b <sub>v</sub> b
+
