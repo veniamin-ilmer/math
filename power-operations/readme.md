@@ -131,7 +131,7 @@ Although it looks a little cleaner, it still is inconsistent with the addition a
 
 Biggest difference: Notice how `a` is in the middle of the equation, rather than the left side.
 
-The reason why is that the reverse of exponentiation, reverses the left side of the exponent, rather than the right side of the exponent.
+The reason why is that the reverse of the equation, reverses the left side of the exponent, rather than the right side, like in addition or multiplication.
 
 So, perhaps the exponent order is wrong?
 
