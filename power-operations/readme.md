@@ -87,6 +87,8 @@ Like all basic math operations, *apower* has rules that you can use do solve equ
 
 If you'd like to see a list of all identites, [click here](identities.md).
 
+Something that I love about this math operation is that it avoids using `e` by default, and hence can be taught to gradeschool students without involving calculus.
+
 ## Exponentation
 
 Although having a single operation for the reverse of exponentiation, is an excellent step towards consistency, there is one more important step we should do.
@@ -172,3 +174,15 @@ If x <sub>v</sub> y = z then
 
 * x = z <sup>^</sup> y
 * y = (1 / z) <sup>^</sup> x
+
+If you'd like to see a list of all identites (including calculus), [click here](identities.md).
+
+## Discussion
+
+The changes proposed here are quite difficult for someone with many years of math experience to accept.
+
+However I feel that this alternative method to understand exponentation would save newcomers a lot of confusion.
+
+I believe consistency with other math operations is crutial to helping us understand exponentation better.
+
+It further opens the doors to a better understanding of higher operations after exponentiation: [Tetration](https://en.wikipedia.org/wiki/Tetration)
