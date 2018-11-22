@@ -26,9 +26,9 @@ I feel that consistency with the rest of math operators is extremely important.
 
 Hence, let's start with the basic math operators.
 
-* Multiplication involves repeat adding. For example, `7 * 5` or `5 * 7` means you add 7 together 5 times.
+* Multiplication involves repeat adding. For example, 7 * 5 or 5 * 7 means you add 7 together 5 times.
 
-* Division is the reverse of multiplication, and it can be done with repeat subtraction. For example, `41 / 7` means you start with 41, and keep subtracting it by 7 until the number becomes less than the divisior. The answer is how many subtractions you did, plus some remainder.
+* Division is the reverse of multiplication, and it can be done with repeat subtraction. For example, 41 / 7 means you start with 41, and keep subtracting it by 7 until the number becomes less than the divisior. The answer is how many subtractions you did, plus some remainder.
 
 As a reminder, lets divide 40 by 7 with repeated subtraction:
 
@@ -40,7 +40,7 @@ As a reminder, lets divide 40 by 7 with repeated subtraction:
 
 Since 6 is smaller than 7, we stop subtracting.
 
-In total, we needed to subtract 5 times. Hence, `41 / 7 = about 5`.
+In total, we needed to subtract 5 times. Hence, 41 / 7 = about 5.
 
 Moving on, we already know repeat multiplication is exponentation.
 
@@ -59,15 +59,19 @@ In total, we needed to divide 4 times, so 4 with some remainder is our answer.
 
 In our current math system, how do we represent this calculation?
 
-Well, that would be `ln(100) / ln(3)`
+Well, that would be ln(100) / ln(3)
 
 Why does the reverse of exponentation require us to use three math operations? Convention.
 
-That makes things confusing. Let's redefine the reverse of exponentation as:
+Even the shorter variant, log<sub>3</sub>(100), is difficult to read.
 
-`x <sub>v</sub> y = ln(x) / ln(y)`
+3 + 4 is much easier to read than say add<sub>4</sub>(3).
 
-Hence, in our example `100 <sub>v</sub> 3 = about 4`
+Let's redefine the reverse of exponentation as:
+
+x <sub>v</sub> y = ln(x) / ln(y)
+
+Hence, in our example 100 <sub>v</sub> 3 = about 4
 
 I will call this operation *apower*, short for anti-power.
 
@@ -83,14 +87,22 @@ Now that we have *apower*, let's try and analyze what should be the correct orde
 
 Starting with addition and subtraction. What is the solution to this problem?
 
-`a + b - b + b - b + b - b`
+a + b - b + b - b + b - b
 
 Visually, it is easy to see that the `b`s cancel out, and we just have `a` remaining.
 
 Okay, lets apply the same calculation to multiplication and division..
 
-`a * b / b * b / b * b / b`
+a * b / b * b / b * b / b
 
 Visually, it is easy to see that the `b`s cancel out, and we just have `a` remaining.
 
 What about exponentation?
+
+First, let's see how that looks with standard notation, shall we?
+
+a ^ b v b ^ b v b ^ b v b
+
+b<sup>(b<sup>(b<sup>a</sup> v b)</sup> v b)</sup> v b
+
+ln(b<sup>a</sup>) / ln(b)
