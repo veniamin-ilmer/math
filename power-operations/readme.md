@@ -155,11 +155,21 @@ It feels great to be be able to do this:
 
 * a <sub>v</sub> b <sup>^</sup> b = a
 
+### Order of Operations
+
 To be clear:
 
 1 <sup>^</sup> 2 <sup>^</sup> 3 <sub>v</sub> 4 <sup>^</sup> 5 is read as (((1 <sup>^</sup> 2) <sup>^</sup> 3) <sub>v</sub> 4) <sup>^</sup> 5
 
 You just go left to right. Treat <sup>^</sup> and <sub>v</sub> the same.
+
+1 + 2 * 3 <sup>^</sup> 5 * 8 <sub>v</sub> 9 / 4 - 10 is read as 1 + (2 * (3 <sup>^</sup> 5) * (8 <sub>v</sub> 9) / 4) - 10
+
+Order of operations:
+
+1. *power* and *apower*
+2. *multiplication* and *division*
+3. *addition* and *subtraction*
 
 ### *Power* Identities
 
