@@ -101,8 +101,18 @@ What about exponentation?
 
 First, let's see how that looks with standard notation, shall we?
 
-a ^ b <sub>v</sub> b <sub>^</sub> b <sub>v</sub> b ^ b <sub>v</sub> b
+ln(b<sup>(ln(b<sup>(ln(b<sup>a</sup>) / ln(b))</sup>) / ln(b))</sup>) / ln(b)
+
+or:
+
+log<sub>b</sub>(b<sup>(log<sub>b</sub>(b<sup>(log<sub>b</sub>(b<sup>a</sup>))</sup>))</sup>)
+
+Thought that was hard to read? It was even harder to write up.
+
+Okay, now let's convert it to use the new *apower* operator:
 
 b<sup>(b<sup>(b<sup>a</sup> <sub>v</sub> b)</sup> <sub>v</sub> b)</sup> <sub>v</sub> b
 
-ln(b<sup>(ln(b<sup>(ln(b<sup>a</sup>) / ln(b))</sup>) / ln(b))</sup>) / ln(b)
+Although it looks a little cleaner, it still feels a little messy.
+
+a ^ b <sub>v</sub> b <sub>^</sub> b <sub>v</sub> b ^ b <sub>v</sub> b
