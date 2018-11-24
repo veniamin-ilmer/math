@@ -1,6 +1,6 @@
-limit n -> infinity
+**limit n -> infinity**
 
-Most Infinite
+## Most Infinite
 
 n ^ n ^ n ^ ...
 
@@ -18,7 +18,7 @@ n, (1 / n) ^ (n!)
 
 ln(n)
 
-Finite Max
+## Finite Max
 
 !n / n! = e
 
@@ -30,7 +30,7 @@ n! / sqrt(n) * n ^ (e / n) = (1 / 2) ^ (2 * pi)
 
 n ^ (1 / n)! = (-*y*) ^ e
 
-Finite Min
+## Finite Min
 
 1 / ln(ln(c))
 
@@ -52,4 +52,4 @@ n / ln(n!)^n
 
 1 / n ^ n ^ n ^ ...
 
-Most Zero
+## Most Zero
