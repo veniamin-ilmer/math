@@ -8,6 +8,8 @@ n ^ n
 
 n!, !n, n ^ (n / e)
 
+ln(n) ^ n / n
+
 n ^ c
 
 c ^ n
@@ -42,13 +44,13 @@ ln(n) / n
 
 1 / n
 
-n / ln(n)^n
+n / ln(n) ^ n
 
 1 / n!
 
 1 / n ^ n
 
-n / ln(n!)^n
+n / ln(n!) ^ n
 
 1 / n ^ n ^ n
 
