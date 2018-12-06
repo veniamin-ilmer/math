@@ -62,13 +62,13 @@ Order of operations:
 
 ---
 
-* a <sub>v</sub> c + b <sub>v</sub> c = (a * b) <sub>v</sub> c
-* a <sub>v</sub> c - b <sub>v</sub> c = (a / b) <sub>v</sub> c
+* (a * b) <sub>v</sub> c = a <sub>v</sub> c + b <sub>v</sub> c
+* (a / b) <sub>v</sub> c = a <sub>v</sub> c - b <sub>v</sub> c
 
 ---
 
 * a * b <sub>v</sub> c = a <sup>^</sup> b <sub>v</sub> c
-* (1 / a) * b <sub>v</sub> c = b <sub>v</sub> a <sup>^</sup> c
+* (1 / a) * b <sub>v</sub> c = b <sub>v</sub> (a <sup>^</sup> c)
 
 ---
 
