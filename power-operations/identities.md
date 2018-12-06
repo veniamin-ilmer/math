@@ -75,6 +75,7 @@ Order of operations:
 * 1 / a <sub>v</sub> b = b <sub>v</sub> a
 * a <sub>v</sub> c / b <sub>v</sub> c = a <sub>v</sub> b
 * a <sub>v</sub> c * c <sub>v</sub> b = a <sub>v</sub> b
+* a <sub>v</sub> (b <sup>^</sup> a) = 1 / b
 
 ## Calculus identities
 
