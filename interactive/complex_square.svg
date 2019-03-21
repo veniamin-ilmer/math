@@ -52,7 +52,7 @@
     }
   ]]>
   </script>
-  <text x="50%" y="50%" text-anchor="middle" font-size="500%" alignment-baseline="middle" fill-opacity="0.3"><tspan fill="green">+</tspan><tspan fill="red">-</tspan>&#8730;(<tspan fill="blue">x</tspan>)</text>
+  <text x="50%" y="50%" text-anchor="middle" font-size="500%" alignment-baseline="middle" fill-opacity="0.4"><tspan fill="green">+</tspan><tspan fill="red">-</tspan>&#8730;(<tspan fill="blue">x</tspan>)</text>
   <line x1="0%" y1="50%" x2="100%" y2="50%" style="stroke:black;stroke-width:0.1%" />
   <text x="90%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Real Positive</text>
   <text x="10%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Real Negative</text>
