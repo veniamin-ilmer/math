@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" onload="makeDraggable(evt)">
+
+  <script type="text/javascript"><![CDATA[
+    function makeDraggable(evt) {
+      var svg = evt.target;
+
+      svg.addEventListener('mousemove', drag);
+      svg.addEventListener('touchmove', drag);
+
+      //Calculates objects x,y position relative to plot.
+      function getMousePosition(evt) {
+        var box = svg.getBBox();
+        if (evt.touches) { evt = evt.touches[0]; }
+        
+        return {
+          x: evt.clientX - box.width / 2,
+          y: evt.clientY - box.height / 2
+        };
+      }
+
+      function drag(evt) {
+        var mouse = getMousePosition(evt);
+        var square = document.getElementById('square').transform.baseVal.getItem(0);
+        square.setTranslate(mouse.x, mouse.y);
+        
+        var rootp = document.getElementById('rootp').transform.baseVal.getItem(0);
+        r = root(mouse);
+        rootp.setTranslate(r.x, r.y);
+
+        var rootn = document.getElementById('rootn').transform.baseVal.getItem(0);
+        rootn.setTranslate(-r.x, -r.y);
+
+      }
+
+      function root(mouse) {
+        mouse.y = -mouse.y //reverse the mouse y because the top is 0, and bottom is max
+      
+        var ret = {};
+        
+        abs = Math.sqrt(Math.pow(mouse.x, 2) + Math.pow(mouse.y, 2));
+        
+        ret.x = Math.sqrt((abs + mouse.x) / 2);
+        
+        if(mouse.y >= 0) {
+          ret.y = -Math.sqrt((abs - mouse.x) / 2);
+        } else if(mouse.y < 0) {
+          ret.y = Math.sqrt((abs - mouse.x) / 2);
+        }
+
+        return ret;
+      }
+    }
+  ]]>
+  </script>
+  <text x="50%" y="50%" text-anchor="middle" font-size="500%" alignment-baseline="middle" fill-opacity="0.3"><tspan fill="green">+</tspan><tspan fill="red">-</tspan>&#8730;(<tspan fill="blue">x</tspan>)</text>
+  <line x1="0%" y1="50%" x2="100%" y2="50%" style="stroke:black;stroke-width:0.1%" />
+  <text x="90%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Real Positive</text>
+  <text x="10%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Real Negative</text>
+  <line x1="50%" y1="0%" x2="50%" y2="100%" style="stroke:black;stroke-width:0.1%" />
+  <text x="50%" y="10%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Imaginary Positive</text>
+  <text x="50%" y="90%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Imaginary Negative</text>
+  <circle id="rootn" cx="50%" cy="50%" r="1%" fill="red" transform="translate(-10)" />
+  <circle id="rootp" cx="50%" cy="50%" r="1%" fill="green" transform="translate(10)" />
+  <circle id="square" cx="50%" cy="50%" r="1%" fill="blue" transform="translate(100)" />
+</svg>
