@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     onload="makeDraggable(evt)">
+    
+    <style>
+      .static {
+        cursor: not-allowed;
+      }
+      .draggable {
+        cursor: move;
+      }
+    text {
+      cursor: default;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    </style>
+    
+    <script type="text/javascript"><![CDATA[
+      function makeDraggable(evt) {
+      
+        scale = 0.2;
+
+        in1_coords = {x:0, y:0};
+        in2_coords = {x:0, y:0};
+        out_coords = {x:0, y:0};
+
+
+        var svg = evt.target;
+
+        svg.addEventListener('mousedown', startDrag);
+        svg.addEventListener('mousemove', drag);
+        svg.addEventListener('mouseup', endDrag);
+        svg.addEventListener('mouseleave', endDrag);
+        svg.addEventListener('touchstart', startDrag);
+        svg.addEventListener('touchmove', drag);
+        svg.addEventListener('touchend', endDrag);
+        svg.addEventListener('touchleave', endDrag);
+        svg.addEventListener('touchcancel', endDrag);
+
+        box = svg.getBBox();  //Get box inside because box might change over time.
+
+        function getMousePosition(evt) {
+
+          if (evt.touches) { evt = evt.touches[0]; }
+          return {
+          x: (evt.clientX - box.width / 2) / (box.width * scale),
+          y: (evt.clientY - box.height / 2) / (box.height * scale)
+          };
+        }
+
+        var selectedElement, transform;
+
+        function startDrag(evt) {
+          box = svg.getBBox();  //Get box inside because box might change over time.
+
+          if (evt.target.classList.contains('draggable')) {
+            selectedElement = evt.target;
+
+            // Make sure the first transform on the element is a translate transform
+            var transforms = selectedElement.transform.baseVal;
+
+            if (transforms.length === 0 || transforms.getItem(0).type !== SVGTransform.SVG_TRANSFORM_TRANSLATE) {
+              // Create an transform that translates by (0, 0)
+              var translate = svg.createSVGTransform();
+              translate.setTranslate(0, 0);
+              selectedElement.transform.baseVal.insertItemBefore(translate, 0);
+            }
+
+            // Get initial translation
+            transform = transforms.getItem(0);
+          }
+        }
+
+        function drag(evt) {
+          if (selectedElement) {
+            evt.preventDefault();
+            var coord = getMousePosition(evt);
+            transform.setTranslate(coord.x * (box.width * scale), coord.y * (box.height * scale));
+            
+            if(selectedElement.id == "in1") {
+              in1_coords.x = coord.x;
+              in1_coords.y = coord.y;
+            } else if(selectedElement.id == "in2") {
+              in2_coords.x = coord.x;
+              in2_coords.y = coord.y;
+            }
+            out_coords.x = in1_coords.x * in2_coords.x - in1_coords.y * in2_coords.y;
+            out_coords.y = in1_coords.y * in2_coords.x + in1_coords.x * in2_coords.y;
+            
+            var out_obj = document.getElementById('out');
+            var transforms = out_obj.transform.baseVal;
+            if (transforms.length === 0 || transforms.getItem(0).type !== SVGTransform.SVG_TRANSFORM_TRANSLATE) {
+              // Create an transform that translates by (0, 0)
+              var translate = svg.createSVGTransform();
+              translate.setTranslate(0, 0);
+              out_obj.transform.baseVal.insertItemBefore(translate, 0);
+            }
+            out_trans = transforms.getItem(0);
+
+            out_trans.setTranslate(out_coords.x * (box.width * scale), out_coords.y * (box.height * scale));
+          }
+        }
+
+        function endDrag(evt) {
+          selectedElement = false;
+        }
+      }
+    ]]> </script>
+    
+    <text x="50%" y="50%" text-anchor="middle" font-size="500%" alignment-baseline="middle" fill-opacity="0.5"><tspan fill="red">r</tspan> * <tspan fill="green">g</tspan> = <tspan fill="blue">b</tspan></text>
+    <line x1="0%" y1="50%" x2="100%" y2="50%" style="stroke:black;stroke-width:0.1%" />
+    <text x="90%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.2">Real Positive</text>
+    <text x="10%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.2">Real Negative</text>
+    <text x="70%" y="49%" text-anchor="middle" font-size="200%" alignment-baseline="middle">1</text>
+    <circle cx="70%" cy="50%" r="0.5%" fill="black" />
+    <text x="30%" y="49%" text-anchor="middle" font-size="200%" alignment-baseline="middle">-1</text>
+    <circle cx="30%" cy="50%" r="0.5%" fill="black" />
+    <line x1="50%" y1="0%" x2="50%" y2="100%" style="stroke:black;stroke-width:0.1%" />
+    <text x="50%" y="10%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.2">Imaginary Positive</text>
+    <text x="50%" y="90%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.2">Imaginary Negative</text>
+    <text x="51%" y="30%" text-anchor="middle" font-size="200%" alignment-baseline="middle"><tspan font-style = "italic">i</tspan></text>
+    <circle cx="50%" cy="30%" r="0.5%" fill="black" />
+    <text x="51%" y="70%" text-anchor="middle" font-size="200%" alignment-baseline="middle">-<tspan font-style = "italic">i</tspan></text>
+    <circle cx="50%" cy="70%" r="0.5%" fill="black" />
+    
+    <circle id="out" class="static" cx="50%" cy="50%" r="1%" fill="blue" />
+    <circle id="in1" class="draggable" cx="50%" cy="50%" r="1%" fill="red" />
+    <circle id="in2" class="draggable" cx="50%" cy="50%" r="1%" fill="green" />
+
+</svg>
