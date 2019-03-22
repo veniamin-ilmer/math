@@ -9,9 +9,9 @@
 
       svg.addEventListener('mousemove', drag);
       svg.addEventListener('touchmove', drag);
-      
-      var box = svg.getBBox();
 
+      box = svg.getBBox();  //Get box inside because box might change over time.
+      
       //Calculates objects x,y position relative to plot.
       function getMousePosition(evt) {
         
@@ -24,6 +24,8 @@
       }
 
       function drag(evt) {
+        box = svg.getBBox();  //Get box inside because box might change over time.
+        
         var mouse = getMousePosition(evt);
         var square = document.getElementById('square').transform.baseVal.getItem(0);
         square.setTranslate(mouse.x * (box.width * scale), mouse.y * (box.height * scale));
@@ -68,7 +70,7 @@
   <text x="50%" y="90%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.2">Imaginary Negative</text>
   <text x="51%" y="70%" text-anchor="middle" font-size="200%" alignment-baseline="middle">-<tspan font-style = "italic">i</tspan></text>
   <text x="51%" y="30%" text-anchor="middle" font-size="200%" alignment-baseline="middle"><tspan font-style = "italic">i</tspan></text>
-  <circle id="rootn" cx="50%" cy="50%" r="1%" fill="red" transform="translate(-10)" />
-  <circle id="rootp" cx="50%" cy="50%" r="1%" fill="green" transform="translate(10)" />
-  <circle id="square" cx="50%" cy="50%" r="1%" fill="blue" transform="translate(100)" />
+  <circle id="rootn" cx="50%" cy="50%" r="1%" fill="red" transform="translate(-500)" />
+  <circle id="rootp" cx="50%" cy="50%" r="1%" fill="green" transform="translate(500)" />
+  <circle id="square" cx="50%" cy="50%" r="1%" fill="blue" transform="translate(700)" />
 </svg>
