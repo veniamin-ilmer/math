@@ -42,7 +42,6 @@
         box = svg.getBBox();  //Get box inside because box might change over time.
 
         function getMousePosition(evt) {
-
           if (evt.touches) { evt = evt.touches[0]; }
           return {
           x: (evt.clientX - box.width / 2) / (box.width * scale),
