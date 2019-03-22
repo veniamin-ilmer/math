@@ -1,5 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" onload="makeDraggable(evt)">
 
+  <style>
+    text {
+      cursor: default;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  </style>
+  
   <script type="text/javascript"><![CDATA[
     function makeDraggable(evt) {
     
