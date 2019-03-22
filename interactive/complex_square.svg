@@ -2,33 +2,38 @@
 
   <script type="text/javascript"><![CDATA[
     function makeDraggable(evt) {
+    
+      scale = 0.2;
+    
       var svg = evt.target;
 
       svg.addEventListener('mousemove', drag);
       svg.addEventListener('touchmove', drag);
+      
+      var box = svg.getBBox();
 
       //Calculates objects x,y position relative to plot.
       function getMousePosition(evt) {
-        var box = svg.getBBox();
+        
         if (evt.touches) { evt = evt.touches[0]; }
         
         return {
-          x: evt.clientX - box.width / 2,
-          y: evt.clientY - box.height / 2
+          x: (evt.clientX - box.width / 2) / (box.width * scale),
+          y: (evt.clientY - box.height / 2) / (box.height * scale)
         };
       }
 
       function drag(evt) {
         var mouse = getMousePosition(evt);
         var square = document.getElementById('square').transform.baseVal.getItem(0);
-        square.setTranslate(mouse.x, mouse.y);
+        square.setTranslate(mouse.x * (box.width * scale), mouse.y * (box.height * scale));
         
         var rootp = document.getElementById('rootp').transform.baseVal.getItem(0);
         r = root(mouse);
-        rootp.setTranslate(r.x, r.y);
+        rootp.setTranslate(r.x * (box.width * scale), r.y * (box.height * scale));
 
         var rootn = document.getElementById('rootn').transform.baseVal.getItem(0);
-        rootn.setTranslate(-r.x, -r.y);
+        rootn.setTranslate(-r.x * (box.width * scale), -r.y * (box.height * scale));
 
       }
 
@@ -52,13 +57,17 @@
     }
   ]]>
   </script>
-  <text x="50%" y="50%" text-anchor="middle" font-size="500%" alignment-baseline="middle" fill-opacity="0.4"><tspan fill="green">+</tspan><tspan fill="red">-</tspan>&#8730;(<tspan fill="blue">x</tspan>)</text>
+  <text x="50%" y="50%" text-anchor="middle" font-size="500%" alignment-baseline="middle" fill-opacity="0.3"><tspan fill="green">+</tspan><tspan fill="red">-</tspan>&#8730;(<tspan fill="blue">x</tspan>)</text>
   <line x1="0%" y1="50%" x2="100%" y2="50%" style="stroke:black;stroke-width:0.1%" />
-  <text x="90%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Real Positive</text>
-  <text x="10%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Real Negative</text>
+  <text x="90%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.2">Real Positive</text>
+  <text x="10%" y="50%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.2">Real Negative</text>
+  <text x="70%" y="49%" text-anchor="middle" font-size="200%" alignment-baseline="middle">1</text>
+  <text x="30%" y="49%" text-anchor="middle" font-size="200%" alignment-baseline="middle">-1</text>
   <line x1="50%" y1="0%" x2="50%" y2="100%" style="stroke:black;stroke-width:0.1%" />
-  <text x="50%" y="10%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Imaginary Positive</text>
-  <text x="50%" y="90%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.3">Imaginary Negative</text>
+  <text x="50%" y="10%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.2">Imaginary Positive</text>
+  <text x="50%" y="90%" text-anchor="middle" font-size="200%" alignment-baseline="middle" fill-opacity="0.2">Imaginary Negative</text>
+  <text x="51%" y="70%" text-anchor="middle" font-size="200%" alignment-baseline="middle">-<tspan font-style = "italic">i</tspan></text>
+  <text x="51%" y="30%" text-anchor="middle" font-size="200%" alignment-baseline="middle"><tspan font-style = "italic">i</tspan></text>
   <circle id="rootn" cx="50%" cy="50%" r="1%" fill="red" transform="translate(-10)" />
   <circle id="rootp" cx="50%" cy="50%" r="1%" fill="green" transform="translate(10)" />
   <circle id="square" cx="50%" cy="50%" r="1%" fill="blue" transform="translate(100)" />
