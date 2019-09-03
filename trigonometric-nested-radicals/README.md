@@ -67,3 +67,40 @@ If there is a zero in the middle, it's plus or minus.
 | 8 | 6 | 4 | 2 | 0 | 2 | 4 | 6 | 8 |
 
 ### Step 2
+
+The top number row will be used as a key for this lookup table. The bottom row number will be used as a value to find the next key. The pluses and minuses will be added into the nested radical as we move through the table.
+
+Continuing with sin(pi * 1 / 8) as the example, the numerator in this case is **1**.
+
+So in our table, we start out with **1** in the top row. We highlight the whole column:
+
+| + | **+** | + | + | ± | - | - | - | - |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | ***1*** | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| 8 | **6** | 4 | 2 | 0 | 2 | 4 | 6 | 8 |
+
+Starting off, we see that we are on the positive side of the table.
+
+So we start with positive root 2:
+
+![+sqrt(2)](p.gif)
+
+Next, we will use the **6** from the bottom row as a key in the next lookup:
+
+| + | + | + | + | ± | - | **-** | - | - |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 2 | 3 | 4 | 5 | ***6*** | 7 | 8 |
+| 8 | 6 | 4 | 2 | 0 | 2 | **4** | 6 | 8 |
+
+Now, we are on the negative side of the table.
+
+So we update our example:
+
+![+sqrt(2-sqrt(2))](pm.gif)
+
+Next, we will use the **4** from the bottom row as a key in the next lookup:
+
+| + | + | + | + | **±** | - | - | - | - |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 2 | 3 | ***4*** | 5 | 6 | 7 | 8 |
+| 8 | 6 | 4 | 2 | **0** | 2 | 4 | 6 | 8 |
