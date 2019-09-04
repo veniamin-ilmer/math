@@ -42,7 +42,7 @@ Yep, I after many hours studying this thing, I figured out the algorithm to gene
 
 List all integers from 0 to the denominator.
 
-Using cos(pi / 8) as an example:
+Using sin(pi / 8) as an example:
 
 |  |  |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ So we start with positive root 2:
 
 Next, we will use the **6** from the bottom row as a key in the next lookup:
 
-| + | + | + | + | ± | - | ## - | - | - |
+| + | + | + | + | ± | - | **-** | - | - |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 1 | 2 | 3 | 4 | 5 | ***6*** | 7 | 8 |
 | 8 | 6 | 4 | 2 | 0 | 2 | **4** | 6 | 8 |
@@ -104,3 +104,55 @@ Next, we will use the **4** from the bottom row as a key in the next lookup:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 1 | 2 | 3 | ***4*** | 5 | 6 | 7 | 8 |
 | 8 | 6 | 4 | 2 | **0** | 2 | 4 | 6 | 8 |
+
+Doing the same thing:
+
+![+sqrt(2-sqrt(2±sqrt(2)))](pmn.gif)
+
+Next we will use the **0** from the bottom row as a key in the next lookup:
+
+| **+** | + | + | + | ± | - | - | - | - |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ***0*** | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+| **8** | 6 | 4 | 2 | 0 | 2 | 4 | 6 | 8 |
+
+Which gives:
+
+![+sqrt(2-sqrt(2±sqrt(2+sqrt(2))))](pmnp.gif)
+
+Next we will use the **8** from the bottom row as a key in the next lookup:
+
+| + | + | + | + | ± | - | - | - | **-** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | ***8*** |
+| 8 | 6 | 4 | 2 | 0 | 2 | 4 | 6 | **8** |
+
+![+sqrt(2-sqrt(2±sqrt(2+sqrt(2-sqrt(2)))))](pmnpm.gif)
+
+Noted that the 8 will keep looping to the same location indefinitely, meaning the radical will repeat:
+
+![+sqrt(2-sqrt(2±sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-...))))))))))](pmnpminf.gif)
+
+Now, if we just divide this answer by two, we will get our solution:
+
+![sin1_8inf](sin1_8inf.gif)
+
+# Step 3
+
+Some common repeating nested radicals reduce into simpler non-repeating radicals.
+
+This is the case in our example:
+
+sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-...)))))))
+
+equals:
+
+1
+
+Meaning:
+
+±sqrt(2+sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-sqrt(2-...)))))))) = ±sqrt(2+1) = ±sqrt(3)
+
+Also:
+
+sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2+sqrt(2+...))))))) = 2
