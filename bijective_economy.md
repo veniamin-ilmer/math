@@ -81,7 +81,7 @@ Base b | Avg E(b, N)<br> N = 1 to 6 | Avg E(b, N)<br> N = 1 to 43 | Avg E(b, N)<
 4 | 6.0 | 10.3 | 14.2 | 23.9 | 1.0615
 5 | 6.7 | 11.7 | 15.8 | 26.3 | 1.1429
 Bijective 2 | 3.3 | 7.6 | 11.4 | 20.9 | 0.9457
-Bijective 3 | 4.5 | 8.2 | ... | ... | ...
+Bijective 3 | 4.5 | 8.2 | 12.1 | 21.24 | 1.0066
 
 As you can see, Bijective 2 has a better radix economy than even ordinary base *e*.
 
