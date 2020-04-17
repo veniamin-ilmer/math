@@ -1,4 +1,4 @@
-# Radix Economy of Bijective Binary numbers
+# Radix Economy of Bijective numbers
 ## Background
 ### Radix Economy
 [Radix Economy](https://en.wikipedia.org/wiki/Radix_economy) is the amount of memory required to store numerical data.
