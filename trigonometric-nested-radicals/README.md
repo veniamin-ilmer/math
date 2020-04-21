@@ -2,7 +2,7 @@
 
 I wondered for a while, why are 30 degree, 45 degree, 60 degree, and 90 degree angles so special.
 
-Why do they have such simple cosines and sines, and why are all the other angles significantly more complicated?
+Why do they have such simple cosines, and why are all the other angles significantly more complicated?
 
 I've been trying to solve this for a while. The results are quite revealing.
 
@@ -20,7 +20,7 @@ Starting off with a few curiosities..
 
 You can test, this pattern will continue to be true for future cases.
 
-Indeed, I found increasingly, that a lot of sines and cosines can be expressed as adding or subtracting nested radicals of 2:
+Indeed, I found increasingly, that a lot of cosines can be expressed as adding or subtracting nested radicals of 2:
 
 ![cos3_8](cos3_8.png)
 
@@ -32,11 +32,15 @@ Indeed, I found increasingly, that a lot of sines and cosines can be expressed a
 
 There are too many of these to be a coincidence..
 
-Perhaps one can generate a nested radical solution for all rational sines and cosines?
+Perhaps one can generate a nested radical solution for all rational cosines?
 
 ## Nested Radical Algorithm
 
-Yep, I after many hours studying this thing, I figured out the algorithm to generate a solution for any rational sine or cosine.
+Yep, I after many hours studying this thing, I figured out the algorithm to generate a solution for any rational cosine.
+
+If you are interested in a formal proof, my colleague Dr. Thomas Morgan PhD. has written one up that you can review [here](Nested Radicals Proof.pdf).
+
+Otherwise, below is the algorithm you can use to generate a nested radical for any rational cosine.
 
 ### Step 1
 
