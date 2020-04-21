@@ -38,7 +38,7 @@ Perhaps one can generate a nested radical solution for all rational cosines?
 
 Yep, I after many hours studying this thing, I figured out the algorithm to generate a solution for any rational cosine.
 
-If you are interested in a formal proof, my colleague Dr. Thomas Morgan PhD. has written one up that you can review [here](Nested Radicals Proof.pdf).
+If you are interested in a formal proof, my colleague Dr. Thomas Morgan PhD. has written one up that you can review [here](Nested%20Radicals%20Proof.pdf).
 
 Otherwise, below is the algorithm you can use to generate a nested radical for any rational cosine.
 
