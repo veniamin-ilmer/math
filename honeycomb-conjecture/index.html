@@ -1,0 +1,486 @@
+<style>
+img { display: block}
+math { font-size: 20px }
+
+</style>
+
+<center>
+<h1>Problem testing the Honeycomb Conjecture</h1>
+
+<p>I've run into a problem when testing the honeycomb conjecture. I am finding this ratio for regular polygon tilings:</p>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<math>
+  <mstyle displaystyle="true">
+  <mfrac>
+    <mi>Area of honey</mi>
+    <mi>Area of wax</mi>
+  </mfrac>
+  </mstyle>
+</math>
+
+<p>The way I am doing this is by finding the smallest area that can be tiled, including both the honey and the wax.</p>
+
+<p>Starting with the honeycomb conjecture's hexagons..<p>
+
+<h1>Hexagon Tile</h1>
+
+<img src="hex_full.png" />
+
+<p>Each hexagon is bordered by 6 rectangles and 6 equilateral triangles.</p>
+
+<p>If I want to tile the hexagon's border, I only need to include 3 rectangles and 2 triangles in each copy:</p>
+
+<img src="hex_tile1.png" />
+<img src="hex_tile2.png" />
+<img src="hex_tile3.png" />
+<img src="hex_tile4.png" />
+
+<p>
+The area for a hexagon is
+<math>
+  <mstyle displaystyle="true">
+    <mfrac>
+      <mrow>
+        <mn>3</mn>
+        <msqrt>
+          <mn>3</mn>
+        </msqrt>
+      </mrow>
+      <mrow>
+        <mn>2</mn>
+      </mrow>
+    </mfrac>
+    <msup>
+      <mi>s</mi>
+      <mn>2</mn>
+    </msup>
+  </mstyle>
+</math>
+
+<br />The area for a rectangle is
+<math>
+  <mstyle displaystyle="true">
+    <mi>s</mi>
+    <mo>*</mo>
+    <mi>w</mi>
+  </mstyle>
+</math>
+
+<br />The area for an equilateral triangle is
+<math>
+  <mstyle displaystyle="true">
+    <mfrac>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mn>4</mn>
+    </mfrac>
+    <msup>
+      <mi>w</mi>
+      <mn>2</mn>
+    </msup>
+  </mstyle>
+</math>
+
+<br />Where <i>s</i> is the length of the side of the hexagon, <i>w</i> is the width of the border.
+</p>
+
+<math>
+  <mstyle displaystyle="true">
+  <mfrac>
+    <mi>Area of honey</mi>
+    <mi>Area of wax</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mi>Area of hexagon</mi>
+    <mi>Area of 3 rectangles + 2 equilateral triangles</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mfrac>
+        <mrow>
+          <mn>3</mn>
+          <msqrt>
+            <mn>3</mn>
+          </msqrt>
+        </mrow>
+        <mrow>
+          <mn>2</mn>
+        </mrow>
+      </mfrac>
+      <msup>
+        <mi>s</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>3</mn>
+      <mo>*</mo>
+      <mi>s</mi>
+      <mo>*</mo>
+      <mi>w</mi>
+      <mo>+</mo>
+      <mn>2</mn>
+      <mo>*</mo>
+      <mfrac>
+        <msqrt>
+          <mn>3</mn>
+        </msqrt>
+        <mn>4</mn>
+      </mfrac>
+      <msup>
+        <mi>w</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  </mstyle>
+</math>
+
+<p>If we make the the length of <i>s</i> variable, while setting <i>w</i> to a constant 1, this ratio equals:
+
+<math>
+  <mstyle displaystyle="true">
+  <mfrac>
+    <mrow>
+      <mn>3</mn>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <msup>
+        <mi>s</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>6</mn>
+      <mi>s</mi>
+      <mo>+</mo>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+    </mrow>
+  </mfrac>
+  </mstyle>
+</math>
+</p>
+
+<p>Looks good? Okay, now let's switch to a more complicated tile.</p>
+
+<h2>Truncated hexagonal tiling</h2>
+
+<img src="dodec_full.png" />
+
+<p><a href="https://en.wikipedia.org/wiki/Truncated_hexagonal_tiling">See Truncated hexagonal tiling on wikipedia</a></p>
+
+<p>Honey would be inside the dodecagon and inside the surrounding 6 equilateral triangles.</p>
+
+<p>Between each dodecagon and triangle is the wax border.</p>
+
+<p><img src="triangle_numbers.png" />
+Notice the borders are different sizes. If we set the thinner borders to 1, then the thicker border between the dodecagons is <math><msqrt><mn>3</mn></msqrt></math>.</p>
+
+If I want to tile this, the honey requires 1 dodecagon and 2 equilateral triangles. The wax requires 6 thin borders, 3 thick borders, and 6 triangles with angles 30°, 30°, 120°.
+
+<img src="dodec_tile1.png" />
+<img src="dodec_tile2.png" />
+<img src="dodec_tile3.png" />
+<img src="dodec_tile4.png" />
+
+<p>
+The area for a dodecagon is
+<math>
+  <mstyle displaystyle="true">
+    <mo>(</mo>
+    <mn>6</mn>
+    <mo>+</mo>
+    <mn>3</mn>
+    <msqrt>
+      <mn>3</mn>
+    </msqrt>
+    <mo>)</mo>
+    <msup>
+      <mi>s</mi>
+      <mn>2</mn>
+    </msup>
+  </mstyle>
+</math>
+
+<br />The area for an equilateral triangle is
+<math>
+  <mstyle displaystyle="true">
+    <mfrac>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mn>4</mn>
+    </mfrac>
+    <msup>
+      <mi>s</mi>
+      <mn>2</mn>
+    </msup>
+  </mstyle>
+</math>
+
+<br />The area for the thin rectangle is
+<math>
+  <mstyle displaystyle="true">
+    <mi>s</mi>
+    <mo>*</mo>
+    <mi>w</mi>
+  </mstyle>
+</math>
+
+<br />The area for the thick rectangle is
+<math>
+  <mstyle displaystyle="true">
+    <msqrt>
+      <mn>3</mn>
+    </msqrt>
+    <mo>*</mo>
+    <mi>s</mi>
+    <mo>*</mo>
+    <mi>w</mi>
+  </mstyle>
+</math>
+
+<br />Small triangle has angles 30°, 30°, 120°, which actually has the same area as an equilateral triangle:
+<math>
+  <mstyle displaystyle="true">
+    <mfrac>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mn>4</mn>
+    </mfrac>
+    <msup>
+      <mi>w</mi>
+      <mn>2</mn>
+    </msup>
+  </mstyle>
+</math>
+
+<br />Where <i>s</i> is the length of the side of the dodecagon and triangle, <i>w</i> is the width of the border.
+</p>
+
+<math>
+  <mstyle displaystyle="true">
+  <mfrac>
+    <mi>Area of honey</mi>
+    <mi>Area of wax</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mi>Area of 1 dodecagon + 2 equilateral triangles</mi>
+    <mi>Area of 6 thin borders + 3 thick borders + 6 triangles</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mo>(</mo>
+      <mn>6</mn>
+      <mo>+</mo>
+      <mn>3</mn>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mo>)</mo>
+      <msup>
+        <mi>s</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+      <mn>2</mn>
+      <mo>*</mo>
+      <mfrac>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mn>4</mn>
+    </mfrac>
+    <msup>
+      <mi>s</mi>
+      <mn>2</mn>
+    </msup>
+    </mrow>
+    <mrow>
+      <mn>6</mn>
+      <mo>*</mo>
+      <mi>s</mi>
+      <mi>w</mi>
+      <mo>+</mo>
+      <mn>3</mn>
+      <mo>*</mo>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mi>s</mi>
+      <mi>w</mi>
+      <mo>+</mo>
+      <mn>6</mn>
+      <mo>*</mo>
+      <mfrac>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mn>4</mn>
+    </mfrac>
+    <msup>
+      <mi>w</mi>
+      <mn>2</mn>
+    </msup>
+    </mrow>
+  </mfrac>
+  </mstyle>
+</math>
+
+<p>If we make the the length of <i>s</i> variable, while setting <i>w</i> to a constant 1, this ratio equals:
+
+<math>
+  <mstyle displaystyle="true">
+  <mfrac>
+    <mrow>
+      <mo>(</mo>
+      <mn>12</mn>
+      <mo>+</mo>
+      <mn>7</mn>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mo>)</mo>
+      <msup>
+        <mi>s</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>6</mn>
+      <mo>(</mo>
+      <mn>2</mn>
+      <mo>+</mo>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mo>)</mo>
+      <mi>s</mi>
+      <mo>+</mo>
+      <mn>3</mn>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+    </mrow>
+  </mfrac>
+  </mstyle>
+</math>
+</p>
+
+<h2>Comparing the two tiles</h2>
+
+<p>
+With hexagons, our honey to wax ratio is
+<math>
+  <mstyle displaystyle="true">
+  <mfrac>
+    <mrow>
+      <mn>3</mn>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <msup>
+        <mi>s</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>6</mn>
+      <mi>s</mi>
+      <mo>+</mo>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+    </mrow>
+  </mfrac>
+  </mstyle>
+</math>
+
+<p>With the truncated hexagonal tiling, the ratio is <math>
+  <mstyle displaystyle="true">
+  <mfrac>
+    <mrow>
+      <mo>(</mo>
+      <mn>12</mn>
+      <mo>+</mo>
+      <mn>7</mn>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mo>)</mo>
+      <msup>
+        <mi>s</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>6</mn>
+      <mo>(</mo>
+      <mn>2</mn>
+      <mo>+</mo>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+      <mo>)</mo>
+      <mi>s</mi>
+      <mo>+</mo>
+      <mn>3</mn>
+      <msqrt>
+        <mn>3</mn>
+      </msqrt>
+    </mrow>
+  </mfrac>
+  </mstyle>
+</math>
+</p>
+
+Putting them on a graph, we get:
+
+<img src="honey_to_wax.png" />
+Almost a linear relationship, showing that the truncated hexagonal tiling has a larger ratio than the hexagon tiling.
+
+<p>If I leave out the side triangles, the ratio for the hexagon is <math>
+  <mstyle displaystyle="true">
+  <mfrac>
+    <msqrt>
+      <mn>3</mn>
+    </msqrt>
+    <mn>2</mn>
+  </mfrac>
+  <mo>&#x2248;</mo>
+  <mn>0.8660254</mn>
+  </mstyle>
+</math>
+</p>
+<p>If I leave out the side triangles, the ratio for the truncated hexagonal tiling is <math>
+  <mstyle displaystyle="true">
+  <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+  </mfrac>
+  <mi>+</mi>
+  <mfrac>
+    <mn>1</mn>
+    <msqrt>
+      <mn>3</mn>
+    </msqrt>
+  </mfrac>
+  <mo>&#x2248;</mo>
+  <mn>1.07735</mn>
+  </mstyle>
+</math>
+</p>
+
+What's going on? Why is the truncated hexagonal tiling showing greater honey to wax ratio than the hexagonal tiling? What am I doing wrong??
+</center>
