@@ -104,7 +104,7 @@ For all triangles:
 
 With all of these triangles using the pythagorean theorem, this information can be represented as an infinite set of triangles. I made a diagram that involves the interesting identities here:
 
-![Infinite Triangle](infinite_triangle.png)
+![Infinite Triangle](infinite-triangle.png)
 
 ## Acknowledgements
 
