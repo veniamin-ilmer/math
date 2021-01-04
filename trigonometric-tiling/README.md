@@ -88,7 +88,7 @@ For all hexagons:
 
 For all triangles:
 
-![Big Triangle](bit-triangle.png)
+![Big Triangle](big-triangle.png)
 
 ### a + b = c
 
