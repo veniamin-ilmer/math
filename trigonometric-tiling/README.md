@@ -12,7 +12,7 @@ For all triangles used in the tiling on this page:
 
 ### a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
 
-Please note, the points have nothing to do with the triangle. The triangles just provide a neat way of showing all the points.
+Please note, the points have nothing to do with the triangle lengths or angles. The triangles just provide a neat way of showing all the points.
 
 In all of the tiled triangles below, the top left point squared plus top right point squared equal the bottom point squared.
 
@@ -65,6 +65,23 @@ Hence, the tiling can also be doing for hyberbolic functions too.
 ## Hyperbolic Tile
 
 ![Hyperbolic Tile](hyperbolic-tiling.png)
+
+## More Properties
+
+Here are a few more useful properties I found..
+
+For all triangles:
+
+![Reverse Triangle](reverse-triangle.png)
+
+### a<sup>-2</sup> + b<sup>-2</sup> = c<sup>-2</sup>
+
+For all hexagons:
+
+![Hexagon](hexagon.png)
+
+### a<sup>2</sup> = b*B = c*C = d*D
+
 
 ## Acknowledgements
 
