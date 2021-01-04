@@ -80,7 +80,7 @@ For all hexagons:
 
 ![Hexagon](hexagon.png)
 
-### a<sup>2</sup> = b*B = c*C = d*D
+### a<sup>2</sup> = bB = cC = dD
 
 
 ## Acknowledgements
