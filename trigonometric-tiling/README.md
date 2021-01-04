@@ -76,7 +76,7 @@ For all triangles:
 
 ### a<sup>-2</sup> + b<sup>-2</sup> = c<sup>-2</sup>
 
---
+---
 
 For all hexagons:
 
@@ -84,13 +84,27 @@ For all hexagons:
 
 ### a<sup>2</sup> = bB = cC = dD
 
---
+---
 
 For all triangles:
 
 ![Big Triangle](big-triangle.png)
 
 ### a + b = c
+
+---
+
+For all triangles:
+
+![Reverse Big Triangle](reverse-big-triangle.png)
+
+### 1 / a + 1 / b = 1 / c
+
+## Alternative Visual
+
+With all of these triangles using the pythagorean theorem, this information can be represented as an infinite set of triangles. I made a diagram that involves the interesting identities here:
+
+![Infinite Triangle](infinite_triangle.png)
 
 ## Acknowledgements
 
