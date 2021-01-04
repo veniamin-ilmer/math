@@ -76,12 +76,21 @@ For all triangles:
 
 ### a<sup>-2</sup> + b<sup>-2</sup> = c<sup>-2</sup>
 
+--
+
 For all hexagons:
 
 ![Hexagon](hexagon.png)
 
 ### a<sup>2</sup> = bB = cC = dD
 
+--
+
+For all triangles:
+
+![Big Triangle](bit-triangle.png)
+
+### a + b = c
 
 ## Acknowledgements
 
