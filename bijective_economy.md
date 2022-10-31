@@ -127,13 +127,3 @@ All of these factors makes it impractical to implement bijective numbers into co
 Even if we implement some type of variable size number system, computers are not good optimizing the memory use - You'd end up with fragmented memory, which would defeat the memory optimization of the bijective system.
 
 Code runs more optimally when we can assume that the digit quantity does not change. And bijective numbers' economy depends on a flexible digit amount.
-
-## Zero and decimals
-
-Another issue we run into with bijective numbers is zero and decimals. If bijective numbers start from 1, how can we represent anything less than 1?
-
-I have given this a lot of thought, and realized there may be an interesting way to represent numbers without requiring zero! Let me explain:
-
-Imagine a clock:
-
-![clock](clock.png)
