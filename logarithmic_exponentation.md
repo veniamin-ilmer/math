@@ -8,13 +8,13 @@ ln(a) + ln(b) = ln(a * b)
 
 Let's work with a new operation:
 
-ln(a) * ln(b) = ln(a @ b)
+**ln(a) * ln(b) = ln(a @ b)**
 
 "@" just happened to be a convenient symbol available on the keyboard. It can be replaced with another symbol.
 
 Here are some example equivalents:
 
-a @ b = e<sup>ln(a) * ln(b)</sup> = a<sup>ln(b)</sup> = b<sup>ln(a)</sup>
+**a @ b = e<sup>ln(a) * ln(b)</sup> = a<sup>ln(b)</sup> = b<sup>ln(a)</sup>**
 
 This operation has several useful properties. I will go each and compare with multiplication.
 
