@@ -12,6 +12,10 @@ ln(a) * ln(b) = ln(a @ b)
 
 "@" just happened to be a convenient symbol available on the keyboard. It can be replaced with another symbol.
 
+Here are some example equivalents:
+
+a @ b = e <sup>ln(a) * ln(b)</sup> = a^ln(b) = b^ln(a)
+
 This operation has several useful properties. I will go each and compare with multiplication.
 
 #### Communtative property
@@ -37,12 +41,12 @@ a * (b + c) = a * b + a * c | a @ (b * c) = a @ b * a @ c
 
 |Multiplication | New          |
 |---------------|--------------|
-|x * 0 = 0         | x @ 0 = 0 |
-|x * 1 = x         | x @ 1 = 1 |
-|                  | x @ e = x |
-|x * 2 = x + x     | x @ e ^ 2 = x * x |
-|x * 3 = x + x + x | x @ e ^ 3 = x * x * x |
-|x * -1 = -x | x @ e ^ -1 = 1 / x |
+|a * 0 = 0         | a @ 0 = 0 |
+|a * 1 = a         | a @ 1 = 1 |
+|                  | a @ e = a |
+|a * 2 = a + a     | a @ e^2 = a * a |
+|a * 3 = a + a + a | a @ e^3 = a * a * a |
+|a * -1 = -a | a @ e ^ -1 = 1 / a |
 
 Notice how @ is not a replacement for exponentation. However it can be used to complement exponentation.
 
@@ -52,6 +56,7 @@ These are particularly interesting because they deviate from multiplication:
 
 Muliplication | New          
 --------------|--------------
-(x * y) ^ c = x ^ c * y ^ c | (x @ y) ^ c = x ^ c @ y = x @ y ^ c
+(a * b)^c = a^c * b^c | (a @ b)^c = a^c @ b = a @ b^c
 
-x ^ a * x ^ b = x ^ (a + b)
+#### Derivative
+
