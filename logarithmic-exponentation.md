@@ -62,7 +62,7 @@ These are particularly interesting because they deviate from multiplication:
 
 New Op | (a @ b)<sup>c</sup> = a<sup>c</sup> @ b = a @ b<sup>c</sup>
 -------|--------------
-Muliplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
+Multiplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
 
 #### Derivative
 
@@ -80,5 +80,35 @@ Muliplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
         <mo>)</mo></mrow>
       <mrow><mi>d</mi><mi>x</mi></mrow>
     </mfrac>
+    <mo>=</mo>
+    <mi>f</mi><mo>(</mo>
+      <mi>x</mi>
+    <mo>)</mo>
+    <mo>@</mo>
+    <mi>g</mi><mo>(</mo>
+      <mi>x</mi>
+    <mo>)</mo>
+    <mo>ln</mo><mo>(</mo>
+      <msup>
+        <mrow>
+          <mo>f</mo><mo>(</mo>
+            <mi>x</mi>
+          <mo>)</mo>
+        </mrow>
+        <mrow>
+          <mfrac>
+            <mrow>
+              <mo>g</mo><mo>'</mo><mo>(</mo>
+                <mi>x</mi>
+              <mo>)</mo>
+            </mrow>
+            <mrow>
+              <mo>g</mo><mo>(</mo>
+                <mi>x</mi>
+              <mo>)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+    <mo>)</mo>
   </mrow>
 </math>
