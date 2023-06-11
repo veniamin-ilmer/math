@@ -69,7 +69,15 @@ Muliplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
 <math display="block">
   <mrow>
     <mfrac>
-      <mrow><mi>d</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow>
+      <mrow><mi>d</mi><mo>(</mo>
+        <mi>f</mi><mo>(</mo>
+          <mi>x</mi>
+        <mo>)</mo>
+        <mo>@</mo>
+        <mi>g</mi><mo>(</mo>
+          <mi>x</mi>
+        <mo>)</mo>
+        <mo>)</mo></mrow>
       <mrow><mi>d</mi><mi>x</mi></mrow>
     </mfrac>
   </mrow>
