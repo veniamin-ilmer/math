@@ -35,9 +35,13 @@ Addition | (a + b) + c = a + (b + c)
 
 #### Distributive property
 
-New Op + Multiplication | a @ (b * c) = a @ b * a @ c | (a * b) @ (c * d) = a @ c * a @ b * b @ c * b @ d
--------|--------------|--------------
-Multiplication + Addition | a * (b + c) = a * b + a * c | (a + b) * (c + d) = a * c + a * b + b * c + b * d
+New Op | a @ (b * c) = a @ b * a @ c
+-------|--------------
+Multiplication | a * (b + c) = a * b + a * c
+
+New Op | (a * b) @ (c * d) = a @ c * a @ b * b @ c * b @ d
+-------|--------------
+Multiplication | (a + b) * (c + d) = a * c + a * b + b * c + b * d
 
 #### Property of 0 and identities
 
@@ -65,8 +69,8 @@ Muliplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
 <math display="block">
   <mrow>
     <mfrac>
-      <mrow>1</mrow>
-      </mrow>2</mrow>
+      <mrow><mi>d</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow>
+      <mrow><mi>d</mi><mi>x</mi></mrow>
     </mfrac>
   </mrow>
 </math>
