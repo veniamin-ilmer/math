@@ -109,6 +109,7 @@ Multiplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
             </mrow>
           </mfrac>
         </mrow>
+      </msup>
     <mo>)</mo>
   </mrow>
 </math>
