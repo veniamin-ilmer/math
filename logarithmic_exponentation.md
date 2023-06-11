@@ -22,13 +22,13 @@ x * y = y * x | x @ y = y @ x
 
 #### Associative property
 
-(x * y) * z = x * (y * z)
-
-(x @ y) @ z = x @ (y @ z)
+Muliplication | New
+--------------|--------------
+(x * y) * z = x * (y * z) | (x @ y) @ z = x @ (y @ z)
 
 #### Distributive property
 
-x * (y + z) = x * y + x * z
-
-x @ (y * z) = x @ y * x @ z
+Muliplication | New
+--------------|--------------
+x * (y + z) = x * y + x * z | x @ (y * z) = x @ y * x @ z
 
