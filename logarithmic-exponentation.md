@@ -81,13 +81,13 @@ Multiplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
       <mrow><mi>d</mi><mi>x</mi></mrow>
     </mfrac>
     <mo>=</mo>
-    <mi>f</mi><mo stretchy="false>(</mo>
+    <mi>f</mi><mo stretchy="false">(</mo>
       <mi>x</mi>
-    <mo>)</mo>
+    <mo stretchy="false">)</mo>
     <mo>@</mo>
     <mi>g</mi><mo stretchy="false">(</mo>
       <mi>x</mi>
-    <mo>)</mo>
+    <mo stretchy="false">)</mo>
     <mo>ln</mo><mo>(</mo>
       <msup>
         <mrow>
