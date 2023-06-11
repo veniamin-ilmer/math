@@ -151,7 +151,7 @@ Multiplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
       <mi>x</mi>
     <mo>)</mo>
     <mo>@</mo>
-    <mi>c</mi></mrow>
+    <mi>c</mi>
     <mo>ln</mo><mo>(</mo>
       <mi>c</mi>
     <mo>)</mo>
