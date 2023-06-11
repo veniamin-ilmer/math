@@ -124,7 +124,7 @@ Multiplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
               <mo>)</mo>
             </mrow>
             <mrow>
-              <mi>f</mo><mi>(</mo>
+              <mi>f</mi><mo>(</mo>
                 <mi>x</mi>
               <mo>)</mo>
             </mrow>
