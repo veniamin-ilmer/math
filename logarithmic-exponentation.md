@@ -91,19 +91,19 @@ Multiplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
     <mo>ln</mo><mo>(</mo>
       <msup>
         <mrow>
-          <mo>f</mo><mo>(</mo>
+          <mi>f</mi><mo>(</mo>
             <mi>x</mi>
           <mo>)</mo>
         </mrow>
         <mrow>
           <mfrac>
             <mrow>
-              <mo>g</mo><mo>'</mo><mo>(</mo>
+              <mi>g</mi><mo>'</mo><mo>(</mo>
                 <mi>x</mi>
               <mo>)</mo>
             </mrow>
             <mrow>
-              <mo>g</mo><mo>(</mo>
+              <mi>g</mi><mo>(</mo>
                 <mi>x</mi>
               <mo>)</mo>
             </mrow>
@@ -112,19 +112,19 @@ Multiplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
       </msup>
       <msup>
         <mrow>
-          <mo>g</mo><mo>(</mo>
+          <mi>g</mi><mo>(</mo>
             <mi>x</mi>
           <mo>)</mo>
         </mrow>
         <mrow>
           <mfrac>
             <mrow>
-              <mo>f</mo><mo>'</mo><mo>(</mo>
+              <mi>f</mi><mo>'</mo><mo>(</mo>
                 <mi>x</mi>
               <mo>)</mo>
             </mrow>
             <mrow>
-              <mo>f</mo><mo>(</mo>
+              <mi>f</mo><mi>(</mo>
                 <mi>x</mi>
               <mo>)</mo>
             </mrow>
@@ -147,22 +147,22 @@ Multiplication | (a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup>
       <mrow><mi>d</mi><mi>x</mi></mrow>
     </mfrac>
     <mo>=</mo>
-    <mi>f</mi><mo stretchy="false">(</mo>
+    <mi>f</mi><mo>(</mo>
       <mi>x</mi>
-    <mo stretchy="false">)</mo>
+    <mo>)</mo>
     <mo>@</mo>
     <mi>c</mi></mrow>
-    <mo>ln</mo><mo stretchy="false">(</mo>
+    <mo>ln</mo><mo>(</mo>
       <mi>c</mi>
-    <mo stretchy="false">)</mo>
+    <mo>)</mo>
     <mfrac>
       <mrow>
-        <mo>f</mo><mo>'</mo><mo>(</mo>
+        <mi>f</mi><mo>'</mo><mo>(</mo>
           <mi>x</mi>
         <mo>)</mo>
       </mrow>
       <mrow>
-        <mo>f</mo><mo>(</mo>
+        <mi>f</mi><mo>(</mo>
           <mi>x</mi>
         <mo>)</mo>
       </mrow>
