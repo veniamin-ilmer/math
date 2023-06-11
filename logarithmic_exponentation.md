@@ -32,3 +32,10 @@ Muliplication | New
 --------------|--------------
 x * (y + z) = x * y + x * z | x @ (y * z) = x @ y * x @ z
 
+#### Property of 0 and identity
+
+Muliplication | New
+--------------|--------------
+x * 0 = 0     | x @ 0 = 0
+x * 1 = x     | x @ 1 = 1
+              | x @ e = x
