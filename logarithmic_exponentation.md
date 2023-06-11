@@ -16,26 +16,41 @@ This operation has several useful properties. I will go each and compare with mu
 
 #### Communtative property
 
-Muliplication | New
---------------|--------------
-x * y = y * x | x @ y = y @ x
+Multiplication | New
+---------------|--------------
+a * b = b * a | a @ b = b @ a
 
 #### Associative property
 
-Muliplication | New
---------------|--------------
-(x * y) * z = x * (y * z) | (x @ y) @ z = x @ (y @ z)
+Multiplication | New
+---------------|--------------
+(a * b) * c = a * (b * c) | (a @ b) @ c = a @ (b @ c)
 
 #### Distributive property
 
-Muliplication | New
+Multiplication | New
+---------------|--------------
+a * (b + c) = a * b + a * c | a @ (b * c) = a @ b * a @ c
+(a + b) * (c + d) = a * c + a * b + b * c + b * d | (a * b) @ (c * d) = a @ c * a @ b * b @ c * b @ d
+
+#### Property of 0 and identities
+
+|Multiplication | New          |
+|---------------|--------------|
+|x * 0 = 0         | x @ 0 = 0 |
+|x * 1 = x         | x @ 1 = 1 |
+|                  | x @ e = x |
+|x * 2 = x + x     | x @ e ^ 2 = x * x |
+|x * 3 = x + x + x | x @ e ^ 3 = x * x * x |
+|x * -1 = -x | x @ e ^ -1 = 1 / x |
+
+Notice how @ is not a replacement for exponentation. However it can be used to complement exponentation.
+
+#### Property of Powers
+
+Muliplication | New          
 --------------|--------------
-x * (y + z) = x * y + x * z | x @ (y * z) = x @ y * x @ z
 
-#### Property of 0 and identity
+(x*y)^c=x^c*y^c
 
-|Muliplication | New          |
-|--------------|--------------|
-|x * 0 = 0     | x @ 0 = 0|
-|x * 1 = x     | x @ 1 = 1|
-|              | x @ e = x|
+x^a*x^b=x^(a+b)
