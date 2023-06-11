@@ -16,11 +16,11 @@ This operation has several useful properties. I will go each and compare with mu
 
 #### Communtative property
 
-x * y = y * x
+Muliplication | New
+=============================
+x * y = y * x | x @ y = y @ x
 
-x @ y = y @ x
-
-#### Associated property
+#### Associative property
 
 (x * y) * z = x * (y * z)
 
@@ -31,3 +31,4 @@ x @ y = y @ x
 x * (y + z) = x * y + x * z
 
 x @ (y * z) = x @ y * x @ z
+
