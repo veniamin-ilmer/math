@@ -17,7 +17,7 @@ This operation has several useful properties. I will go each and compare with mu
 #### Communtative property
 
 Muliplication | New
-=============================
+--------------|--------------
 x * y = y * x | x @ y = y @ x
 
 #### Associative property
