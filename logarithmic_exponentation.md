@@ -14,7 +14,7 @@ ln(a) * ln(b) = ln(a @ b)
 
 Here are some example equivalents:
 
-a @ b = e <sup>ln(a) * ln(b)</sup> = a^ln(b) = b^ln(a)
+a @ b = e<sup>ln(a) * ln(b)</sup> = a<sup>ln(b)</sup> = b<sup>ln(a)</sup>
 
 This operation has several useful properties. I will go each and compare with multiplication.
 
@@ -44,9 +44,9 @@ a * (b + c) = a * b + a * c | a @ (b * c) = a @ b * a @ c
 |a * 0 = 0         | a @ 0 = 0 |
 |a * 1 = a         | a @ 1 = 1 |
 |                  | a @ e = a |
-|a * 2 = a + a     | a @ e^2 = a * a |
-|a * 3 = a + a + a | a @ e^3 = a * a * a |
-|a * -1 = -a | a @ e ^ -1 = 1 / a |
+|a * 2 = a + a     | a @ e<sup>2</sup> = a * a |
+|a * 3 = a + a + a | a @ e<sup>3</sup> = a * a * a |
+|a * -1 = -a | a @ e<sup>-1</sup> = 1 / a |
 
 Notice how @ is not a replacement for exponentation. However it can be used to complement exponentation.
 
@@ -56,7 +56,7 @@ These are particularly interesting because they deviate from multiplication:
 
 Muliplication | New          
 --------------|--------------
-(a * b)^c = a^c * b^c | (a @ b)^c = a^c @ b = a @ b^c
+(a * b)<sup>c</sup> = a<sup>c</sup> * b<sup>c</sup> | (a @ b)<sup>c</sup> = a<sup>c</sup> @ b = a @ b<sup>c</sup>
 
 #### Derivative
 
