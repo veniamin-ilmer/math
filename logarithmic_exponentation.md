@@ -48,9 +48,10 @@ Notice how @ is not a replacement for exponentation. However it can be used to c
 
 #### Property of Powers
 
+These are particularly interesting because they deviate from multiplication:
+
 Muliplication | New          
 --------------|--------------
+(x * y) ^ c = x ^ c * y ^ c | (x @ y) ^ c = x ^ c @ y = x @ y ^ c
 
-(x*y)^c=x^c*y^c
-
-x^a*x^b=x^(a+b)
+x ^ a * x ^ b = x ^ (a + b)
