@@ -18,19 +18,19 @@ The carry of two bits can be calculated by using the AND gate.
 
 Here is the truth table of balanced ternary addition:
 
- Sum | - | 0 | +
----|---|---|---
- - | + | - | 0a
- 0 | - | 0 | +
- + | - | + | -
+| Sum | - | 0 | + |
+|---|---|---|---|
+| - | + | - | 0 |
+| 0 | - | 0 | + |
+| + | - | + | - |
 
 Let's try to define sum as XOR.
 
- Carry | - | 0 | +
----|---|---|---
- - | + | 0 | 0
- 0 | 0 | 0 | 0
- + | 0 | 0 | +
+| Carry | - | 0 | + |
+|---|---|---|---|
+| - | + | 0 | 0 |
+| 0 | 0 | 0 | 0 |
+| + | 0 | 0 | + |
 
 Let's try to define the carry as AND.
 
