@@ -213,6 +213,6 @@ The OR operation seems to prioritize negativity and positivity under certain con
 
 I think this is a good first step towards building a balanced ternary computer.
 
-If you are interested, I built a simple library using these gates here - gates.rs
+If you are interested, I built a simple library using these gates here - https://github.com/veniamin-ilmer/math/blob/master/balanced-ternary-logic/gates.rs
 
 It would be nice to try and built these logic gates with transistors.
