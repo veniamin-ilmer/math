@@ -1,22 +1,22 @@
-<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
 
-  <circle cx="100" cy="100" r="70" fill="none" stroke="red" stroke-width="2" />
-  <circle cx="200" cy="100" r="70" fill="none" stroke="cyan" stroke-width="2" />
-  <circle cx="100" cy="200" r="70" fill="none" stroke="red" stroke-width="2" />
-  <circle cx="200" cy="200" r="70" fill="none" stroke="cyan" stroke-width="2" />
+  <circle cx="75" cy="75" r="70" fill="none" stroke="red" stroke-width="2" />
+  <circle cx="175" cy="75" r="70" fill="none" stroke="cyan" stroke-width="2" />
+  <circle cx="75" cy="175" r="70" fill="none" stroke="red" stroke-width="2" />
+  <circle cx="175" cy="175" r="70" fill="none" stroke="cyan" stroke-width="2" />
 
   <g>
     <clipPath id="left">
-      <circle cx="100" cy="100" r="70" />
+      <circle cx="75" cy="75" r="70" />
     </clipPath>
-    <circle cx="100" cy="200" r="70" fill="red" clip-path="url(#left)" />
+    <circle cx="75" cy="175" r="70" fill="red" clip-path="url(#left)" />
   </g>
 
   <g>
     <clipPath id="right">
-      <circle cx="200" cy="100" r="70" />
+      <circle cx="175" cy="75" r="70" />
     </clipPath>
-    <circle cx="200" cy="200" r="70" fill="cyan" clip-path="url(#right)" />
+    <circle cx="175" cy="175" r="70" fill="cyan" clip-path="url(#right)" />
   </g>
 
 
