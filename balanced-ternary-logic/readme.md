@@ -153,7 +153,9 @@ This reveals the full subtractor table:
 | + | + | 0 |   | + | 0 |
 | + | + | + |   | + | 0 |
 
-This formula exactly matches ternary subtraction between 3 numbers! Yey! Two's compliment is not necessary. With this balanced ternary logic, NOT is negation.
+This formula exactly matches ternary subtraction between 3 numbers! Yey!
+
+Two's compliment is not necessary. With this balanced ternary logic, NOT is negation.
 
 ## Discussion
 
