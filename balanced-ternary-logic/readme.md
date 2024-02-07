@@ -2,9 +2,7 @@
 
 I have been unhappy with the existing [Three-valued logic](https://en.wikipedia.org/wiki/Three-valued_logic) which mostly involve a true state, a false state, and something in between like unknown.
 
-I have been trying to derive a form of logic which would better represent balanced ternary numbers, with positive, zero, and negative.
-
-The purpose behind this has been to find a balanced ternary analog for a [binary adder](https://en.wikipedia.org/wiki/Adder_(electronics))
+I have been trying to derive a form of logic which would better represent balanced ternary numbers, with positive, zero, and negative. The purpose behind this has been to find a balanced ternary analog for a [binary adder](https://en.wikipedia.org/wiki/Adder_(electronics)) This can be used to develop logic gates which handle positive and negative electric flows for a balanced ternary computer. It can take advantage of 3 having the most efficient [radix economy](https://en.wikipedia.org/wiki/Radix_economy).
 
 Let's see if we can use binary logic gates as an analog for balanced ternary gates.
 
@@ -34,14 +32,9 @@ Let's try to define sum as XOR.
 
 Let's try to define the carry as AND.
 
-Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the binary logic gates:
+Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the binary logic gates, however they require an OR.
 
-* Sum = A XOR B XOR Old Carry
-* New Carry = (A AND B) OR (Old Carry OR (A XOR B)
-
-To do this with balanced ternary, although we can use our AND and XOR gates, we would need to define what is OR.
-
-After a bit of experimentation, I have defined OR as follows:
+Using intuition and a bit of experimentation, I have defined OR as follows:
 
 | OR | - | 0 | + |
 |:-:|:-:|:-:|:-:|
@@ -49,12 +42,12 @@ After a bit of experimentation, I have defined OR as follows:
 | **0** | - | 0 | + |
 | **+** | 0 | + | + |
 
-Testing out the formulas from above:
+Here is the binary logic for a full adder:
 
-Sum = A XOR B XOR Old Carry
-New Carry = (A AND B) OR (Old Carry OR (A XOR B)
+* Sum = A XOR B XOR Old Carry
+* New Carry = (A AND B) OR (Old Carry OR (A XOR B)
 
-Results in this table:
+Using the same formulas with our newly defined ternary logic, results in this table:
 
 | A | B | Old Carry | = | New Carry | Sum |
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -86,4 +79,12 @@ Results in this table:
 | + | + | 0 |   | + | - |
 | + | + | + |   | + | 0 |
 
-Luckily this formula exactly matches ternary addition between 3 numbers. Awesome.
+This formula exactly matches ternary addition between 3 numbers. Awesome.
+
+But how to handle negation?
+
+## Subtraction
+
+Something of interest in binary logic, is that NOT is not the same thing as negation. To perform negation, computers usually have to perform [Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement), where you first do NOT, and then add one.
+
+This logic might be simpler with balanced ternary, because the negative of any balanced ternary number simply involves flipping around the signs. For example the negative of +0-- is -0++.
