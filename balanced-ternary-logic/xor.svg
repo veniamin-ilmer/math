@@ -1,44 +1,44 @@
-<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
 
-  <circle cx="100" cy="100" r="70" fill="red" />
-  <circle cx="200" cy="100" r="70" fill="cyan" />
-  <circle cx="100" cy="200" r="70" fill="red" />
-  <circle cx="200" cy="200" r="70" fill="cyan" />
+  <circle cx="75" cy="75" r="70" fill="red" />
+  <circle cx="175" cy="75" r="70" fill="cyan" />
+  <circle cx="75" cy="175" r="70" fill="red" />
+  <circle cx="175" cy="175" r="70" fill="cyan" />
 
   <g>
     <clipPath id="up">
-      <circle cx="100" cy="100" r="70" />
+      <circle cx="75" cy="75" r="70" />
     </clipPath>
-    <circle cx="200" cy="100" r="70" fill="white" clip-path="url(#up)" />
+    <circle cx="175" cy="75" r="70" fill="white" clip-path="url(#up)" />
   </g>
 
   <g>
     <clipPath id="down">
-      <circle cx="100" cy="200" r="70" />
+      <circle cx="75" cy="175" r="70" />
     </clipPath>
-    <circle cx="200" cy="200" r="70" fill="white" clip-path="url(#down)" />
+    <circle cx="175" cy="175" r="70" fill="white" clip-path="url(#down)" />
   </g>
 
 
   <g>
     <clipPath id="left">
-      <circle cx="100" cy="100" r="70" />
+      <circle cx="75" cy="75" r="70" />
     </clipPath>
-    <circle cx="100" cy="200" r="70" fill="cyan" clip-path="url(#left)" />
+    <circle cx="75" cy="175" r="70" fill="cyan" clip-path="url(#left)" />
   </g>
 
   <g>
     <clipPath id="right">
-      <circle cx="200" cy="100" r="70" />
+      <circle cx="175" cy="75" r="70" />
     </clipPath>
-    <circle cx="200" cy="200" r="70" fill="red" clip-path="url(#right)" />
+    <circle cx="175" cy="175" r="70" fill="red" clip-path="url(#right)" />
   </g>
 
   <!--Add outlines-->
-  <circle cx="100" cy="100" r="70" fill="none" stroke="red" stroke-width="1" />
-  <circle cx="200" cy="100" r="70" fill="none" stroke="blue" stroke-width="1" />
-  <circle cx="100" cy="200" r="70" fill="none" stroke="red" stroke-width="1" />
-  <circle cx="200" cy="200" r="70" fill="none" stroke="blue" stroke-width="1" />
+  <circle cx="75" cy="75" r="70" fill="none" stroke="red" stroke-width="1" />
+  <circle cx="175" cy="75" r="70" fill="none" stroke="blue" stroke-width="1" />
+  <circle cx="75" cy="175" r="70" fill="none" stroke="red" stroke-width="1" />
+  <circle cx="175" cy="175" r="70" fill="none" stroke="blue" stroke-width="1" />
 
 
 </svg>
