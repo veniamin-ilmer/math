@@ -1,0 +1,23 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+
+  <circle cx="100" cy="100" r="70" fill="none" stroke="red" stroke-width="2" />
+  <circle cx="200" cy="100" r="70" fill="none" stroke="cyan" stroke-width="2" />
+  <circle cx="100" cy="200" r="70" fill="none" stroke="red" stroke-width="2" />
+  <circle cx="200" cy="200" r="70" fill="none" stroke="cyan" stroke-width="2" />
+
+  <g>
+    <clipPath id="left">
+      <circle cx="100" cy="100" r="70" />
+    </clipPath>
+    <circle cx="100" cy="200" r="70" fill="red" clip-path="url(#left)" />
+  </g>
+
+  <g>
+    <clipPath id="right">
+      <circle cx="200" cy="100" r="70" />
+    </clipPath>
+    <circle cx="200" cy="200" r="70" fill="cyan" clip-path="url(#right)" />
+  </g>
+
+
+</svg>
