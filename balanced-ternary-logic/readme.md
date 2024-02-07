@@ -32,7 +32,7 @@ Let's try to define sum as XOR.
 
 Let's try to define the carry as AND.
 
-Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the binary logic gates, however they require an OR.
+Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the formula used binary logic gates, however they require an OR.
 
 Using intuition and a bit of experimentation, I have defined OR as follows:
 
