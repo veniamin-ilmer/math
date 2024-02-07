@@ -20,7 +20,7 @@ Here is the truth table of balanced ternary addition:
 
  Sum | - | 0 | +
 ---|---|---|---
- - | + | - | 0
+ - | + | - | 0a
  0 | - | 0 | +
  + | - | + | -
 
