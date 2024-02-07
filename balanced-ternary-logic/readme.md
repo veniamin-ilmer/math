@@ -20,9 +20,9 @@ Here is the truth table of balanced ternary addition:
 
 | Sum | - | 0 | + |
 |---|---|---|---|
-| - | + | - | 0 |
-| 0 | - | 0 | + |
-| + | - | + | - |
+| **-** | + | - | 0 |
+| **0** | - | 0 | + |
+| **+** | - | + | - |
 
 Let's try to define sum as XOR.
 
