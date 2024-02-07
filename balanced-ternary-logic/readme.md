@@ -27,28 +27,27 @@ Here is the truth table of balanced ternary addition:
 Let's try to define sum as XOR.
 
 | Carry | - | 0 | + |
-|---|---|---|---|
-| - | + | 0 | 0 |
-| 0 | 0 | 0 | 0 |
-| + | 0 | 0 | + |
+|:-:|:-:|:-:|:-:|
+| **-** | + | 0 | 0 |
+| **0** | 0 | 0 | 0 |
+| **+** | 0 | 0 | + |
 
 Let's try to define the carry as AND.
 
-Now, to make the a bit more complicated, if we were to make a full adder, we can copy the binary logic gates:
+Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the binary logic gates:
 
-Sum = A XOR B XOR Old Carry
-
-New Carry = (A AND B) OR (Old Carry OR (A XOR B)
+* Sum = A XOR B XOR Old Carry
+* New Carry = (A AND B) OR (Old Carry OR (A XOR B)
 
 To do this with balanced ternary, although we can use our AND and XOR gates, we would need to define what is OR.
 
 After a bit of experimentation, I have defined OR as follows:
 
-OR | - | 0 | +
----|---|---|---
- - | - | - | 0
- 0 | - | 0 | +
- + | 0 | + | +
+| OR | - | 0 | + |
+|:-:|:-:|:-:|:-:|
+| **-** | - | - | 0 |
+| **0** | - | 0 | + |
+| **+** | 0 | + | + |
 
 Testing out the formulas from above:
 
@@ -57,34 +56,34 @@ New Carry = (A AND B) OR (Old Carry OR (A XOR B)
 
 Results in this table:
 
- A | B | Old Carry | = | New Carry | Sum
----|---|---|---|---|---
- - | - | - |   | - | 0
- - | - | 0 |   | - | +
- - | - | + |   | 0 | -
- - | 0 | - |   | - | +
- - | 0 | 0 |   | 0 | -
- - | 0 | + |   | 0 | 0
- - | + | - |   | 0 | -
- - | + | 0 |   | 0 | 0
- - | + | + |   | 0 | +
- 0 | - | - |   | - | +
- 0 | - | 0 |   | 0 | -
- 0 | - | + |   | 0 | 0
- 0 | 0 | - |   | 0 | -
- 0 | 0 | 0 |   | 0 | 0
- 0 | 0 | + |   | 0 | +
- 0 | + | - |   | 0 | 0
- 0 | + | 0 |   | 0 | +
- 0 | + | + |   | + | -
- + | - | - |   | 0 | -
- + | - | 0 |   | 0 | 0
- + | - | + |   | 0 | -
- + | 0 | - |   | 0 | 0
- + | 0 | 0 |   | 0 | +
- + | 0 | + |   | + | -
- + | + | - |   | 0 | +
- + | + | 0 |   | + | -
- + | + | + |   | + | 0
+| A | B | Old Carry | = | New Carry | Sum |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| - | - | - |   | - | 0 |
+| - | - | 0 |   | - | + |
+| - | - | + |   | 0 | - |
+| - | 0 | - |   | - | + |
+| - | 0 | 0 |   | 0 | - |
+| - | 0 | + |   | 0 | 0 |
+| - | + | - |   | 0 | - |
+| - | + | 0 |   | 0 | 0 |
+| - | + | + |   | 0 | + |
+| 0 | - | - |   | - | + |
+| 0 | - | 0 |   | 0 | - |
+| 0 | - | + |   | 0 | 0 |
+| 0 | 0 | - |   | 0 | - |
+| 0 | 0 | 0 |   | 0 | 0 |
+| 0 | 0 | + |   | 0 | + |
+| 0 | + | - |   | 0 | 0 |
+| 0 | + | 0 |   | 0 | + |
+| 0 | + | + |   | + | - |
+| + | - | - |   | 0 | - |
+| + | - | 0 |   | 0 | 0 |
+| + | - | + |   | 0 | - |
+| + | 0 | - |   | 0 | 0 |
+| + | 0 | 0 |   | 0 | + |
+| + | 0 | + |   | + | - |
+| + | + | - |   | 0 | + |
+| + | + | 0 |   | + | - |
+| + | + | + |   | + | 0 |
 
 Luckily this formula exactly matches ternary addition between 3 numbers. Awesome.
