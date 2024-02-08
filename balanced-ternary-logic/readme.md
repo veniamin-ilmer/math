@@ -99,17 +99,19 @@ The sum was defined as A XOR B. So in subtraction to find a difference, we would
 
 | Difference | - | 0 | + |
 |:-:|:-:|:-:|:-:|
-| **-** | 0 | + | - |
-| **0** | - | 0 | + |
-| **+** | + | - | 0 |
+| **-** | 0 | - | + |
+| **0** | + | 0 | - |
+| **+** | - | + | 0 |
+
+(A is vertical rows, B is horizontal columns)
 
 The carry was defined as A AND B. So in subtraction to find a difference, we would negate B, hence do A AND NOT(B):
 
 | Borrow | - | 0 | + |
 |:-:|:-:|:-:|:-:|
-| **-** | 0 | 0 | + |
+| **-** | 0 | 0 | - |
 | **0** | 0 | 0 | 0 |
-| **+** | - | 0 | 0 |
+| **+** | + | 0 | 0 |
 
 Awesome! Now let's take the previous formula for a full adder:
 
