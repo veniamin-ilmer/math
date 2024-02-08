@@ -34,7 +34,7 @@ Let's try to define sum as XOR.
 
 Let's try to define the carry as AND.
 
-Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the formula used binary logic gates, however they require an OR.
+Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the formula used boolean algebra, however they require an OR.
 
 Using intuition and a bit of experimentation, I have defined OR as follows:
 
@@ -44,12 +44,12 @@ Using intuition and a bit of experimentation, I have defined OR as follows:
 | **0** | - | 0 | + |
 | **+** | 0 | + | + |
 
-Here is the binary logic for a full adder:
+Here is the boolean algebra for a full adder:
 
 * Sum = A XOR B XOR Old Carry
 * New Carry = (A AND B) OR (Old Carry AND (A XOR B))
 
-Using the same formulas with our newly defined ternary logic, results in this table:
+Using the same formulas with our newly defined ternary algebra, results in this table:
 
 | A | B | Old Carry | = | New Carry | Sum |
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -87,9 +87,9 @@ But how to handle negation?
 
 ## Subtraction
 
-Something of interest in binary logic, is that NOT is not the same thing as negation. To perform negation, computers usually have to perform [Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement), where you first do NOT, and then add one.
+Something of interest in boolean algebra, is that NOT is not the same thing as negation. To perform negation, computers usually have to perform [Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement), where you first do NOT, and then add one.
 
-This logic might be simpler with balanced ternary, because the negative of any balanced ternary number simply involves flipping around the signs. For example the negative of +-0- is -+0+. The concept of being negative, is built into balanced ternary, which may make its use simpler within logic gates. If we define NOT as follows, then it will equal negation:
+This algebra might be simpler with balanced ternary, because the negative of any balanced ternary number simply involves flipping around the signs. For example the negative of +-0- is -+0+. The concept of being negative, is built into balanced ternary, which may make its use simpler within the gates. If we define NOT as follows, then it will equal negation:
 
 | Input | Output |
 |:-----:|:------:|
@@ -159,11 +159,11 @@ This reveals the full subtractor table:
 
 This formula exactly matches ternary subtraction between 3 numbers! Yey!
 
-Two's compliment is not necessary. With this balanced ternary logic, NOT is negation.
+Two's compliment is not necessary. With this balanced ternary algebra, NOT is negation.
 
 ## Discussion
 
-Now that we have derived each logic gate, let's dive into each one:
+Now that we have derived each gate, let's dive into each one:
 
 ### NOT
 
@@ -219,6 +219,6 @@ The OR operation seems to prioritize negativity and positivity under certain con
 
 I think this is a good first step towards building a balanced ternary computer.
 
-If you are interested, I built a simple library using these gates here - [https://github.com/veniamin-ilmer/math/blob/master/balanced-ternary-logic/gates.rs](https://github.com/veniamin-ilmer/math/blob/master/balanced-ternary-logic/gates.rs)
+If you are interested, I built a simple library using these gates here - [gates.rs](https://github.com/veniamin-ilmer/math/blob/master/balanced-ternary-algebra/gates.rs)
 
-It would be nice to try and built these logic gates with transistors.
+It would be nice to try and built these gates with transistors.
