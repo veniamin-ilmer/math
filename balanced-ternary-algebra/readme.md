@@ -175,6 +175,8 @@ Now that we have derived each gate, let's dive into each one:
 
 The NOT operation flips negativity to positivity and vice versa, with neutrality remaining unchanged. This is straightforward in terms of inversion but interesting in that zero remains an immutable neutral state. From the perspective of direct electric flow, this makes sense because direct current can only flow forward, or backward or not at all. It is not possible for electricity to flow backward and forward at the same time.
 
+Electrically, building this gate can be extremely simple - Just reverse the writes input. Positive becomes negative, negative becomes positive. Neutral stays the same.
+
 ### AND
 
 ![AND Venn diagram](and.svg)
@@ -214,6 +216,13 @@ The OR operation seems to prioritize negativity and positivity under certain con
 * Negative XOR Negative = Positive: This could be interpreted as two negatives leading to a positive outcome when their exclusivity is considered, perhaps suggesting opposition or inversion
 * Zero with anything results in the other value or remains Zero, which maintains the notion of neutrality or the lack of change unless opposed.
 * Positive XOR Positive = Negative: This is particularly intriguing, suggesting that two positives, when exclusively considered, result in a negative. This could imply a concept of excess or conflict between positive forces.
+
+## Secondary operations
+
+Exploring the truth tables for this algebra, we can derive:
+
+* NOT(A AND B) = NOT(A) AND NOT(B)
+* NOT(A OR B) = NOT(A) OR NOT(B)
 
 ## Conclusion
 
