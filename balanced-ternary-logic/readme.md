@@ -26,7 +26,7 @@ Let's try to define sum as XOR.
 
 | Carry | - | 0 | + |
 |:-:|:-:|:-:|:-:|
-| **-** | + | 0 | 0 |
+| **-** | - | 0 | 0 |
 | **0** | 0 | 0 | 0 |
 | **+** | 0 | 0 | + |
 
@@ -177,7 +177,7 @@ The NOT operation flips negativity to positivity and vice versa, with neutrality
 
 | AND | - | 0 | + |
 |:-:|:-:|:-:|:-:|
-| **-** | + | 0 | 0 |
+| **-** | - | 0 | 0 |
 | **0** | 0 | 0 | 0 |
 | **+** | 0 | 0 | + |
 
