@@ -1,10 +1,12 @@
-# Balanced Ternary Logic
+# Balanced Ternary Algebra
 
 I have been unhappy with the existing [Three-valued logic](https://en.wikipedia.org/wiki/Three-valued_logic) which is usually true, unknown, and false. I have been trying to derive a form of logic which would better represent balanced ternary numbers, with positive, zero, and negative.
 
-The purpose behind this is to find a [balanced ternary](https://en.wikipedia.org/wiki/Balanced_ternary) analog for a [binary adder](https://en.wikipedia.org/wiki/Adder_(electronics)). This can be used to develop logic gates which handle positive and negative electric flows for a balanced ternary computer. It can take advantage of 3 having the most efficient [radix economy](https://en.wikipedia.org/wiki/Radix_economy).
+The purpose behind this is to find a [balanced ternary](https://en.wikipedia.org/wiki/Balanced_ternary) analog for a [boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra). This can be used to develop logic gates which handle positive and negative electric flows for a balanced ternary computer. It can take advantage of 3 having the most efficient [radix economy](https://en.wikipedia.org/wiki/Radix_economy).
 
-Let's see if we can use binary logic gates as an analog for balanced ternary gates.
+Whenever I bring up this kind of balanced ternary gates, people are quick to interpret it from a logic perspective, and run into philosophical problems. I think that actually has been holding 3 value logic back from being useful. That's why I am starting from a algebraic perspective, to make it useful first, and only afterward see how the result can be logically interpreted.
+
+Let's see if we can use boolean algebra as an analog for balanced ternary algebra.
 
 ## Addition
 
