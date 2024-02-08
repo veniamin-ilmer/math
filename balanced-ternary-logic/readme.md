@@ -71,7 +71,7 @@ Using the same formulas with our newly defined ternary logic, results in this ta
 | 0 | + | + |   | + | - |
 | + | - | - |   | 0 | - |
 | + | - | 0 |   | 0 | 0 |
-| + | - | + |   | 0 | - |
+| + | - | + |   | 0 | + |
 | + | 0 | - |   | 0 | 0 |
 | + | 0 | 0 |   | 0 | + |
 | + | 0 | + |   | + | - |
