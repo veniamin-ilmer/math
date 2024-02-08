@@ -87,7 +87,7 @@ But how to handle negation?
 
 Something of interest in binary logic, is that NOT is not the same thing as negation. To perform negation, computers usually have to perform [Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement), where you first do NOT, and then add one.
 
-This logic might be simpler with balanced ternary, because the negative of any balanced ternary number simply involves flipping around the signs. For example the negative of +0-- is -0++. The concept of being negative, is built into balanced ternary, which may make its use simpler within logic gates. If we define NOT as follows, then it will equal negation:
+This logic might be simpler with balanced ternary, because the negative of any balanced ternary number simply involves flipping around the signs. For example the negative of +-0- is -+0+. The concept of being negative, is built into balanced ternary, which may make its use simpler within logic gates. If we define NOT as follows, then it will equal negation:
 
 | Input | Output |
 |:-----:|:------:|
