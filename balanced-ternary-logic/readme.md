@@ -123,7 +123,7 @@ And convert it to a full subtractor:
 
 This reveals the full subtractor table:
 
-| A | B | Old Carry | = | New Carry | Sum |
+| A | B | Old Borrow | = | New Borrow | Difference |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | - | - | - |   | - | 0 |
 | - | - | 0 |   | - | 0 |
