@@ -24,7 +24,7 @@ Here is the truth table of balanced ternary addition:
 | **0** | - | 0 | + |
 | **+** | 0 | + | - |
 
-Let's try to define sum as XOR.
+Let's try to define sum as XOR. It is both commutative and associative.
 
 | Carry | - | 0 | + |
 |:-:|:-:|:-:|:-:|
@@ -32,20 +32,18 @@ Let's try to define sum as XOR.
 | **0** | 0 | 0 | 0 |
 | **+** | 0 | 0 | + |
 
-Let's try to define the carry as AND.
+Let's try to define the carry as AND. It is both commutative and associative.
 
-Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the formula used boolean algebra, however they require an OR:
+Now, to make the a bit more complicated, if we were to implement a full adder, we can try to use the formula used boolean algebra for the Carry, however it requires an OR:
 
 (A AND B) OR (Old Carry AND (A XOR B))
 
-Yet, experimenting a bit, I found with these balanced ternary gates, XOR can replace OR:
-
-Here is the balanced ternary algebra for a full adder:
+Wxperimenting a bit, I found with these balanced ternary gates, XOR can replace OR. Here is the balanced ternary algebra for a full adder:
 
 * Sum = A XOR B XOR Old Carry
 * New Carry = (A AND B) XOR (Old Carry AND (A XOR B))
 
-Using the same formulas with our newly defined ternary algebra, results in this table:
+Using this formula with our newly defined ternary algebra, results in this table:
 
 | A | B | Old Carry | = | New Carry | Sum |
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -189,7 +187,7 @@ Electrically, building this gate can be extremely simple - Just reverse the writ
 
 ### XOR
 
-![OR Venn diagram](xor.svg)
+![XOR Venn diagram](xor.svg)
 
 | XOR | - | 0 | + |
 |:-:|:-:|:-:|:-:|
@@ -203,15 +201,35 @@ Electrically, building this gate can be extremely simple - Just reverse the writ
 
 ### Secondary operations
 
-Exploring the truth tables for this algebra, we can derive:
+Exploring the truth tables for this algebra, below are findings. & is for AND, ^ is for XOR, ! is for NOT.
 
-* NOT(A AND B) = NOT(A) AND NOT(B)
-* NOT(A XOR B) = NOT(A) XOR NOT(B)
+* A & 0 = 0
+* A ^ 0 = A
+* A & A = A
+* A & !A = 0
+* A ^ A = !A
+* A ^ !A = 0
+
+* !(A & B) = !A & !B
+* !(A ^ B) = !A ^ !B
+* A & B & (A ^ B) = 0
+* A & B & !(A ^ B) = 0
+* A & B = A & !(A ^ B) = B & !(A ^ B)
+* A & !B = A & (!A ^ B) = !B & (!A ^ B)
+* A & (A ^ B) = A & (A ^ !B)
+* A & (A ^ B) = (A ^ !B) & (A ^ B)
+* A & (A ^ B) = A & (A ^ B ^ (A & B))
+
+* A & (A ^ B) = (A ^ B) & (A ^ !B)
+* A ^ (A & B) = !(A & B) ^ (A & (A ^ (A & B)))
+* A ^ (!A & B) = (A & B) ^ (A & (A ^ B))
+
+It would be nice to find a distribution for A ^ (B & C) and A & (B ^ C)
 
 ## Conclusion
 
-I think this is a good first step towards building a balanced ternary computer.
+I think establishing this balanced ternary algebra is a good first step towards building a balanced ternary computer.
 
 If you are interested, I built a simple library using these gates here - [gates.rs](https://github.com/veniamin-ilmer/math/blob/master/balanced-ternary-algebra/gates.rs)
 
-It would be nice to try and built these gates with transistors.
+It would be nice to try and build these gates with transistors.
