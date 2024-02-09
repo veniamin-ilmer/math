@@ -34,20 +34,16 @@ Let's try to define sum as XOR.
 
 Let's try to define the carry as AND.
 
-Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the formula used boolean algebra, however they require an OR.
+Now, to make the a bit more complicated, if we were to implement a full adder, we can copy the formula used boolean algebra, however they require an OR:
 
-Using intuition and a bit of experimentation, I have defined OR as follows:
+(A AND B) OR (Old Carry AND (A XOR B))
 
-| OR | - | 0 | + |
-|:-:|:-:|:-:|:-:|
-| **-** | - | - | 0 |
-| **0** | - | 0 | + |
-| **+** | 0 | + | + |
+Yet, experimenting a bit, I found with these balanced ternary gates, XOR can replace OR:
 
-Here is the boolean algebra for a full adder:
+Here is the balanced ternary algebra for a full adder:
 
 * Sum = A XOR B XOR Old Carry
-* New Carry = (A AND B) OR (Old Carry AND (A XOR B))
+* New Carry = (A AND B) XOR (Old Carry AND (A XOR B))
 
 Using the same formulas with our newly defined ternary algebra, results in this table:
 
@@ -118,12 +114,12 @@ The carry was defined as A AND B. So in subtraction to find a difference, we wou
 Awesome! Now let's take the previous formula for a full adder:
 
 * Sum = A XOR B XOR Old Carry
-* New Carry = (A AND B) OR (Old Carry AND (A XOR B))
+* New Carry = (A AND B) XOR (Old Carry AND (A XOR B))
 
 And convert it to a full subtractor:
 
 * Difference = A XOR NOT(B) XOR NOT(Old Borrow)
-* New Borrow = (A AND NOT(B)) OR (NOT(Old Borrow) AND (A XOR NOT(B)))
+* New Borrow = (A AND NOT(B)) XOR (NOT(Old Borrow) AND (A XOR NOT(B)))
 
 This reveals the full subtractor table:
 
@@ -191,18 +187,6 @@ Electrically, building this gate can be extremely simple - Just reverse the writ
 * Positive AND Positive = Positive: Similarly, two positive statements together reinforce positivity.
 * Any other variant AND'd = Zero: This implies that any uncertainty (introduced by a mix of values) results in a neutral or undefined outcome.
 
-### OR
-
-![OR Venn diagram](or.svg)
-
-| OR | - | 0 | + |
-|:-:|:-:|:-:|:-:|
-| **-** | - | - | 0 |
-| **0** | - | 0 | + |
-| **+** | 0 | + | + |
-
-The OR operation seems to prioritize negativity and positivity under certain conditions but defaults to neutrality when positive and negative are combined. This suggests an interesting perspective where certain combinations of truth values neutralize each other, rather than emphasizing the most "positive" or "negative" outcome.
-
 ### XOR
 
 ![OR Venn diagram](xor.svg)
@@ -217,12 +201,12 @@ The OR operation seems to prioritize negativity and positivity under certain con
 * Zero with anything results in the other value or remains Zero, which maintains the notion of neutrality or the lack of change unless opposed.
 * Positive XOR Positive = Negative: This is particularly intriguing, suggesting that two positives, when exclusively considered, result in a negative. This could imply a concept of excess or conflict between positive forces.
 
-## Secondary operations
+### Secondary operations
 
 Exploring the truth tables for this algebra, we can derive:
 
 * NOT(A AND B) = NOT(A) AND NOT(B)
-* NOT(A OR B) = NOT(A) OR NOT(B)
+* NOT(A XOR B) = NOT(A) XOR NOT(B)
 
 ## Conclusion
 
