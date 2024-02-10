@@ -38,7 +38,7 @@ Now, to make the a bit more complicated, if we were to implement a full adder, w
 
 (A AND B) OR (Old Carry AND (A XOR B))
 
-Wxperimenting a bit, I found with these balanced ternary gates, XOR can replace OR. Here is the balanced ternary algebra for a full adder:
+Experimenting a bit, I found with these balanced ternary gates, XOR can replace OR. Here is the balanced ternary algebra for a full adder:
 
 * Sum = A XOR B XOR Old Carry
 * New Carry = (A AND B) XOR (Old Carry AND (A XOR B))
