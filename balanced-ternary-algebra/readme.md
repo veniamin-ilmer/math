@@ -45,7 +45,7 @@ Experimenting a bit, I found with these balanced ternary gates, XOR can replace 
 
 Using this formula with our newly defined ternary algebra, results in this table:
 
-| A | B | Old Carry | = | New Carry | Sum |
+| Old Carry | A | B | = | New Carry | Sum |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | - | - | - |   | - | 0 |
 | - | - | 0 |   | - | + |
@@ -116,42 +116,42 @@ Awesome! Now let's take the previous formula for a full adder:
 
 And convert it to a full subtractor:
 
-* Difference = A XOR NOT(B) XOR NOT(Old Borrow)
-* New Borrow = (A AND NOT(B)) XOR (NOT(Old Borrow) AND (A XOR NOT(B)))
+* Difference = Old Carry A XOR NOT(B)
+* New Borrow = (A AND NOT(B)) XOR (Old Carry AND (A XOR NOT(B)))
 
 This reveals the full subtractor table:
 
-| A | B | Old Borrow | = | New Borrow | Difference |
+| Old Carry| A | B | = | New Carry | Difference |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| - | - | - |   | 0 | + |
-| - | - | 0 |   | 0 | 0 |
-| - | - | + |   | 0 | - |
+| - | - | - |   | 0 | - |
+| - | - | 0 |   | - | + |
+| - | - | + |   | - | 0 |
 | - | 0 | - |   | 0 | 0 |
 | - | 0 | 0 |   | 0 | - |
 | - | 0 | + |   | - | + |
-| - | + | - |   | 0 | - |
-| - | + | 0 |   | - | + |
+| - | + | - |   | 0 | + |
+| - | + | 0 |   | 0 | 0 |
 | - | + | + |   | 0 | - |
-| 0 | - | - |   | + | - |
-| 0 | - | 0 |   | 0 | + |
-| 0 | - | + |   | 0 | 0 |
+| 0 | - | - |   | 0 | 0 |
+| 0 | - | 0 |   | 0 | - |
+| 0 | - | + |   | - | + |
 | 0 | 0 | - |   | 0 | + |
 | 0 | 0 | 0 |   | 0 | 0 |
 | 0 | 0 | + |   | 0 | - |
-| 0 | + | - |   | 0 | 0 |
-| 0 | + | 0 |   | 0 | - |
-| 0 | + | + |   | - | + |
-| + | - | - |   | + | 0 |
-| + | - | 0 |   | + | - |
-| + | - | + |   | 0 | + |
+| 0 | + | - |   | + | - |
+| 0 | + | 0 |   | 0 | + |
+| 0 | + | + |   | 0 | 0 |
+| + | - | - |   | 0 | + |
+| + | - | 0 |   | 0 | 0 |
+| + | - | + |   | 0 | - |
 | + | 0 | - |   | + | - |
 | + | 0 | 0 |   | 0 | + |
 | + | 0 | + |   | 0 | 0 |
-| + | + | - |   | 0 | + |
-| + | + | 0 |   | 0 | 0 |
-| + | + | + |   | 0 | - |
+| + | + | - |   | + | 0 |
+| + | + | 0 |   | + | - |
+| + | + | + |   | 0 | + |
 
-This formula exactly matches ternary subtraction between 3 numbers! Yey!
+This is the same Old Carry + A - B with balanced ternery.
 
 Two's compliment is not necessary. With this balanced ternary algebra, NOT is negation.
 
