@@ -54,8 +54,8 @@ Now, to make the a bit more complicated, if we were to implement a full adder, w
 
 Experimenting a bit, I found with our balanced ternary truth tables, the boolean AND can be replaced with CARRY. XOR and OR can be resplaced with SUM. Here is the balanced ternary algebra for a full adder:
 
-* Sum = A SUM B SUM Old Carry
-* New Carry = (A CARRY B) SUM (Old Carry CARRY (A SUM B))
+    Sum = A SUM B SUM Old Carry
+    New Carry = (A CARRY B) SUM (Old Carry CARRY (A SUM B))
 
 Using this formula with our newly defined ternary algebra, results in this table:
 
