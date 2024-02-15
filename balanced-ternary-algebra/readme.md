@@ -50,7 +50,7 @@ It is both commutative and associative.
 
 Now, to make the a bit more complicated, if we were to implement a full adder, we can try to use the formula used boolean algebra for the Carry:
 
-$(A AND B) OR (Old Carry AND (A XOR B))$
+    (A AND B) OR (Old Carry AND (A XOR B))$
 
 Experimenting a bit, I found with our balanced ternary truth tables, the boolean AND can be replaced with CARRY. XOR and OR can be resplaced with SUM. Here is the balanced ternary algebra for a full adder:
 
