@@ -50,7 +50,7 @@ It is both commutative and associative.
 
 Now, to make the a bit more complicated, if we were to implement a full adder, we can try to use the formula used boolean algebra for the Carry:
 
-    (A AND B) OR (Old Carry AND (A XOR B))$
+    (A AND B) OR (Old Carry AND (A XOR B))
 
 Experimenting a bit, I found with our balanced ternary truth tables, the boolean AND can be replaced with CARRY. XOR and OR can be resplaced with SUM. Here is the balanced ternary algebra for a full adder:
 
@@ -195,19 +195,19 @@ It is both commutative and associative.
 
 Interesting note - Just like multiplication with regular numbers can distribute into addition, the same can be done with this gates:
 
-A MULT (B SUM C) = (A MULT B) SUM (A MULT C)
+    A MULT (B SUM C) = (A MULT B) SUM (A MULT C)
 
 A bit of experimentation with the truth tables reveals:
 
-A CARRY B = NOT(A MULT B MULT (A SUM B))
+    A CARRY B = NOT(A MULT B MULT (A SUM B))
 
 Reviewing the full adder carry from before:
 
-New Carry = (A CARRY B) SUM (Old Carry CARRY (A SUM B))
+    New Carry = (A CARRY B) SUM (Old Carry CARRY (A SUM B))
 
 A bit of experimentation reveals we can replace it with:
 
-New Carry = NOT((A SUM B) MULT (A SUM C) MULT (B SUM C))
+    New Carry = NOT((A SUM B) MULT (A SUM C) MULT (B SUM C))
 
 This is nice because the symmetry is readily apparent.
 
