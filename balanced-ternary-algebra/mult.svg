@@ -1,0 +1,38 @@
+<svg width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+
+  <g>
+    <clipPath id="up">
+      <circle cx="75" cy="75" r="70" />
+    </clipPath>
+    <circle cx="175" cy="75" r="70" fill="red" clip-path="url(#up)" />
+  </g>
+
+  <g>
+    <clipPath id="down">
+      <circle cx="75" cy="175" r="70" />
+    </clipPath>
+    <circle cx="175" cy="175" r="70" fill="red" clip-path="url(#down)" />
+  </g>
+
+
+  <g>
+    <clipPath id="left">
+      <circle cx="75" cy="75" r="70" />
+    </clipPath>
+    <circle cx="75" cy="175" r="70" fill="cyan" clip-path="url(#left)" />
+  </g>
+
+  <g>
+    <clipPath id="right">
+      <circle cx="175" cy="75" r="70" />
+    </clipPath>
+    <circle cx="175" cy="175" r="70" fill="cyan" clip-path="url(#right)" />
+  </g>
+
+  <!--Add outlines-->
+  <circle cx="75" cy="75" r="70" fill="none" stroke="#8b0000" stroke-width="2" />
+  <circle cx="175" cy="75" r="70" fill="none" stroke="blue" stroke-width="2" />
+  <circle cx="75" cy="175" r="70" fill="none" stroke="#8b0000" stroke-width="2" />
+  <circle cx="175" cy="175" r="70" fill="none" stroke="blue" stroke-width="2" />
+
+</svg>
