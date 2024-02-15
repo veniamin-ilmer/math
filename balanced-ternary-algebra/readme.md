@@ -132,8 +132,8 @@ Awesome! Now let's take the previous formula for a full adder:
 
 And convert it to a full subtractor:
 
-* Difference = Old Carry SUM A SUM NOT(B)
-* New Borrow = (A CARRY NOT(B)) SUM (Old Carry CARRY (A SUM NOT(B)))
+* Difference = Old Borrow SUM A SUM NOT(B)
+* New Borrow = (A CARRY NOT(B)) SUM (Old Borrow CARRY (A SUM NOT(B)))
 
 This reveals the full subtractor table:
 
