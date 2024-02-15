@@ -137,7 +137,7 @@ And convert it to a full subtractor:
 
 This reveals the full subtractor table:
 
-| Old Carry| A | B | = | New Carry | Difference |
+| Old Borrow | A | B | = | New Borrow | Difference |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | - | - | - |   | 0 | - |
 | - | - | 0 |   | - | + |
