@@ -16,7 +16,7 @@ Lets take a look at balanced ternary addition:
 
 | A | B | = | Carry | Sum |
 |:-:|:-:|:-:|:-:|:-:|
-|   |   |   |   |   |
+| - | - |   | - | + |
 | - | - |   | - | + |
 | - | 0 |   | 0 | - |
 | - | + |   | 0 | 0 |
@@ -26,7 +26,7 @@ Lets take a look at balanced ternary addition:
 | + | - |   | 0 | 0 |
 | + | 0 |   | 0 | + |
 | + | + |   | + | - |
-|   |   |   |   |   |
+| + | + |   | + | - |
 
 Here becomes the truth table for balanced ternary addition:
 
