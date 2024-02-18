@@ -207,7 +207,7 @@ Reviewing the full adder carry from before:
 
 A bit of experimentation reveals we can replace it with:
 
-    New Carry = NOT((A SUM B) MULT (A SUM C) MULT (B SUM C))
+    New Carry = NOT((A SUM B) MULT (A SUM Old Carry) MULT (B SUM Old Carry))
 
 This is nice because the symmetry is readily apparent.
 
