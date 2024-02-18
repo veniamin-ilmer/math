@@ -4,7 +4,7 @@ I have been unhappy with the existing [Three-valued logic](https://en.wikipedia.
 
 The purpose behind this is to find a [balanced ternary](https://en.wikipedia.org/wiki/Balanced_ternary) analog for a [boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra). This can be used to develop logic gates which handle positive and negative electric flows for a balanced ternary computer. It can take advantage of 3 having the most efficient [radix economy](https://en.wikipedia.org/wiki/Radix_economy).
 
-Whenever I bring up this topic, people are quick to interpret it from a logic perspective, and run into philosophical problems. I think that actually has been holding 3 value logic back from being useful. That's why I am starting from a algebraic perspective, to make it useful first, and only afterward see how the result can be logically interpreted.
+Whenever I bring up this topic, people are quick to interpret it from a logic perspective, and run into philosophical problems. I think that actually has been holding 3 value logic back from being useful. That's why I am starting from an algebraic perspective, to make it useful first, and only afterward see how the result can be logically interpreted.
 
 Let's see if we can use boolean algebra as an analog for balanced ternary algebra.
 
