@@ -115,7 +115,7 @@ The sum was defined as A SUM B. So in subtraction to find a difference, we would
 | **0** | + | 0 | - |
 | **+** | - | + | 0 |
 
-(A is vertical rows, B is horizontal columns)
+(A is vertical row, B is horizontal column)
 
 The carry was defined as A CARRY B. So in subtraction to find a difference, we would negate B, hence do A CARRY NOT(B):
 
@@ -210,6 +210,29 @@ A bit of experimentation reveals we can replace it with:
     New Carry = NOT((A SUM B) MULT (A SUM Old Carry) MULT (B SUM Old Carry))
 
 This is nice because the symmetry is readily apparent.
+
+## Comparator
+
+Many times in computing, we require comparing two numbers. Working on a Compare operator, where the output is whether or not the first trit is greater than the second trit.
+
+* + is greater
+* 0 is equal
+* - is less
+
+| CMP | - | 0 | + |
+|:-:|:-:|:-:|:-:|
+| **-** | 0 | - | - |
+| **0** | + | 0 | - |
+| **+** | + | + | 0 |
+
+I found this formula:
+
+    a CMP b = (a DIFF b) MULT ((a MULT a) SUM (b MULT b))
+    where a DIFF b = a SUM NOT(b)
+
+Also:
+
+    a CMP b = (a DIFF b) MULT (+ DIFF (a CARRY b))
 
 ## Conclusion
 
