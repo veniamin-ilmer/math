@@ -215,9 +215,9 @@ This is nice because the symmetry is readily apparent.
 
 Many times in computing, we require comparing two numbers. Working on a Compare operator, where the output is whether or not the first trit is greater than the second trit.
 
-* + is greater
-* 0 is equal
-* - is less
++ is greater
+0 is equal
+- is less
 
 | CMP | - | 0 | + |
 |:-:|:-:|:-:|:-:|
